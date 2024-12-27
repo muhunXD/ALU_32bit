@@ -1,0 +1,58 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity ALU_32bit is
+    port (
+        A, B         : in std_logic_vector(31 downto 0);
+        Ainvert      : in std_logic;
+        Binvert      : in std_logic;
+        Operation    : in std_logic_vector(1 downto 0);
+        Result       : out std_logic_vector(31 downto 0);
+        Zero         : out std_logic;
+        Overflow     : out std_logic
+    );
+end entity;
+
+architecture Structural of ALU_32bit is
+    signal Carry   : std_logic_vector(32 downto 0);
+    signal Less    : std_logic;
+    signal Set     : std_logic_vector(31 downto 0);
+begin
+    -- Initialize CarryIn
+    Carry(0) <= Binvert;
+
+    -- Generate 32 1-bit ALU instances
+    ALU_GEN: for i in 0 to 31 generate
+        ALU_inst: entity work.ALU_1bit
+            port map (
+                A => A(i),
+                B => B(i),
+                CarryIn => Carry(i),
+                Less => Less,
+                Ainvert => Ainvert,
+                Binvert => Binvert,
+                Operation => Operation,
+                Result => Result(i),
+                CarryOut => Carry(i+1),
+                Set => Set(i)
+            );
+    end generate ALU_GEN;
+
+    -- SLT (Set Less Than)
+    Less <= Set(31); -- The most significant bit determines SLT result
+
+    -- Zero Detection
+    process (Result)
+    begin
+        if Result = x"00000000" then
+            Zero <= '1';
+        else
+            Zero <= '0';
+        end if;
+    end process;
+
+    -- Overflow Detection
+    Overflow <= Carry(32) xor Carry(31);
+end architecture;

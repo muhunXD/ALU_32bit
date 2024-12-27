@@ -1,0 +1,2981 @@
+|ALU101
+A[0] => alu_1bit:ALU_GEN:0:ALU_inst.A
+A[1] => alu_1bit:ALU_GEN:1:ALU_inst.A
+A[2] => alu_1bit:ALU_GEN:2:ALU_inst.A
+A[3] => alu_1bit:ALU_GEN:3:ALU_inst.A
+A[4] => alu_1bit:ALU_GEN:4:ALU_inst.A
+A[5] => alu_1bit:ALU_GEN:5:ALU_inst.A
+A[6] => alu_1bit:ALU_GEN:6:ALU_inst.A
+A[7] => alu_1bit:ALU_GEN:7:ALU_inst.A
+A[8] => alu_1bit:ALU_GEN:8:ALU_inst.A
+A[9] => alu_1bit:ALU_GEN:9:ALU_inst.A
+A[10] => alu_1bit:ALU_GEN:10:ALU_inst.A
+A[11] => alu_1bit:ALU_GEN:11:ALU_inst.A
+A[12] => alu_1bit:ALU_GEN:12:ALU_inst.A
+A[13] => alu_1bit:ALU_GEN:13:ALU_inst.A
+A[14] => alu_1bit:ALU_GEN:14:ALU_inst.A
+A[15] => alu_1bit:ALU_GEN:15:ALU_inst.A
+A[16] => alu_1bit:ALU_GEN:16:ALU_inst.A
+A[17] => alu_1bit:ALU_GEN:17:ALU_inst.A
+A[18] => alu_1bit:ALU_GEN:18:ALU_inst.A
+A[19] => alu_1bit:ALU_GEN:19:ALU_inst.A
+A[20] => alu_1bit:ALU_GEN:20:ALU_inst.A
+A[21] => alu_1bit:ALU_GEN:21:ALU_inst.A
+A[22] => alu_1bit:ALU_GEN:22:ALU_inst.A
+A[23] => alu_1bit:ALU_GEN:23:ALU_inst.A
+A[24] => alu_1bit:ALU_GEN:24:ALU_inst.A
+A[25] => alu_1bit:ALU_GEN:25:ALU_inst.A
+A[26] => alu_1bit:ALU_GEN:26:ALU_inst.A
+A[27] => alu_1bit:ALU_GEN:27:ALU_inst.A
+A[28] => alu_1bit:ALU_GEN:28:ALU_inst.A
+A[29] => alu_1bit:ALU_GEN:29:ALU_inst.A
+A[30] => alu_1bit:ALU_GEN:30:ALU_inst.A
+A[31] => alu_1bit:ALU_MSB.A
+B[0] => alu_1bit:ALU_GEN:0:ALU_inst.B
+B[1] => alu_1bit:ALU_GEN:1:ALU_inst.B
+B[2] => alu_1bit:ALU_GEN:2:ALU_inst.B
+B[3] => alu_1bit:ALU_GEN:3:ALU_inst.B
+B[4] => alu_1bit:ALU_GEN:4:ALU_inst.B
+B[5] => alu_1bit:ALU_GEN:5:ALU_inst.B
+B[6] => alu_1bit:ALU_GEN:6:ALU_inst.B
+B[7] => alu_1bit:ALU_GEN:7:ALU_inst.B
+B[8] => alu_1bit:ALU_GEN:8:ALU_inst.B
+B[9] => alu_1bit:ALU_GEN:9:ALU_inst.B
+B[10] => alu_1bit:ALU_GEN:10:ALU_inst.B
+B[11] => alu_1bit:ALU_GEN:11:ALU_inst.B
+B[12] => alu_1bit:ALU_GEN:12:ALU_inst.B
+B[13] => alu_1bit:ALU_GEN:13:ALU_inst.B
+B[14] => alu_1bit:ALU_GEN:14:ALU_inst.B
+B[15] => alu_1bit:ALU_GEN:15:ALU_inst.B
+B[16] => alu_1bit:ALU_GEN:16:ALU_inst.B
+B[17] => alu_1bit:ALU_GEN:17:ALU_inst.B
+B[18] => alu_1bit:ALU_GEN:18:ALU_inst.B
+B[19] => alu_1bit:ALU_GEN:19:ALU_inst.B
+B[20] => alu_1bit:ALU_GEN:20:ALU_inst.B
+B[21] => alu_1bit:ALU_GEN:21:ALU_inst.B
+B[22] => alu_1bit:ALU_GEN:22:ALU_inst.B
+B[23] => alu_1bit:ALU_GEN:23:ALU_inst.B
+B[24] => alu_1bit:ALU_GEN:24:ALU_inst.B
+B[25] => alu_1bit:ALU_GEN:25:ALU_inst.B
+B[26] => alu_1bit:ALU_GEN:26:ALU_inst.B
+B[27] => alu_1bit:ALU_GEN:27:ALU_inst.B
+B[28] => alu_1bit:ALU_GEN:28:ALU_inst.B
+B[29] => alu_1bit:ALU_GEN:29:ALU_inst.B
+B[30] => alu_1bit:ALU_GEN:30:ALU_inst.B
+B[31] => alu_1bit:ALU_MSB.B
+Ainvert => alu_1bit:ALU_GEN:0:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:1:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:2:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:3:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:4:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:5:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:6:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:7:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:8:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:9:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:10:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:11:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:12:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:13:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:14:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:15:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:16:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:17:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:18:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:19:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:20:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:21:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:22:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:23:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:24:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:25:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:26:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:27:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:28:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:29:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_GEN:30:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_MSB.Ainvert
+Binvert => alu_1bit:ALU_GEN:0:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:1:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:2:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:3:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:4:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:5:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:6:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:7:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:8:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:9:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:10:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:11:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:12:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:13:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:14:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:15:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:16:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:17:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:18:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:19:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:20:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:21:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:22:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:23:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:24:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:25:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:26:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:27:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:28:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:29:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_GEN:30:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_MSB.Binvert
+Operation[0] => alu_1bit:ALU_GEN:0:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:3:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:4:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:5:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:6:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:7:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:8:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:9:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:10:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:11:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:12:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:13:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:14:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:15:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:16:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:17:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:18:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:19:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:20:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:21:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:22:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:23:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:24:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:25:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:26:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:27:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:28:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_MSB.Operation[0]
+Operation[1] => alu_1bit:ALU_GEN:0:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:3:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:4:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:5:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:6:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:7:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:8:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:9:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:10:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:11:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:12:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:13:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:14:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:15:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:16:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:17:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:18:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:19:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:20:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:21:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:22:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:23:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:24:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:25:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:26:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:27:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:28:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_MSB.Operation[1]
+Operation[2] => alu_1bit:ALU_GEN:0:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:3:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:4:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:5:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:6:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:7:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:8:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:9:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:10:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:11:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:12:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:13:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:14:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:15:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:16:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:17:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:18:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:19:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:20:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:21:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:22:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:23:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:24:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:25:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:26:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:27:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:28:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_MSB.Operation[2]
+Operation[3] => alu_1bit:ALU_GEN:0:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:3:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:4:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:5:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:6:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:7:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:8:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:9:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:10:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:11:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:12:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:13:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:14:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:15:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:16:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:17:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:18:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:19:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:20:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:21:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:22:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:23:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:24:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:25:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:26:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:27:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:28:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_MSB.Operation[3]
+Result[0] <= alu_1bit:ALU_GEN:0:ALU_inst.Result
+Result[1] <= alu_1bit:ALU_GEN:1:ALU_inst.Result
+Result[2] <= alu_1bit:ALU_GEN:2:ALU_inst.Result
+Result[3] <= alu_1bit:ALU_GEN:3:ALU_inst.Result
+Result[4] <= alu_1bit:ALU_GEN:4:ALU_inst.Result
+Result[5] <= alu_1bit:ALU_GEN:5:ALU_inst.Result
+Result[6] <= alu_1bit:ALU_GEN:6:ALU_inst.Result
+Result[7] <= alu_1bit:ALU_GEN:7:ALU_inst.Result
+Result[8] <= alu_1bit:ALU_GEN:8:ALU_inst.Result
+Result[9] <= alu_1bit:ALU_GEN:9:ALU_inst.Result
+Result[10] <= alu_1bit:ALU_GEN:10:ALU_inst.Result
+Result[11] <= alu_1bit:ALU_GEN:11:ALU_inst.Result
+Result[12] <= alu_1bit:ALU_GEN:12:ALU_inst.Result
+Result[13] <= alu_1bit:ALU_GEN:13:ALU_inst.Result
+Result[14] <= alu_1bit:ALU_GEN:14:ALU_inst.Result
+Result[15] <= alu_1bit:ALU_GEN:15:ALU_inst.Result
+Result[16] <= alu_1bit:ALU_GEN:16:ALU_inst.Result
+Result[17] <= alu_1bit:ALU_GEN:17:ALU_inst.Result
+Result[18] <= alu_1bit:ALU_GEN:18:ALU_inst.Result
+Result[19] <= alu_1bit:ALU_GEN:19:ALU_inst.Result
+Result[20] <= alu_1bit:ALU_GEN:20:ALU_inst.Result
+Result[21] <= alu_1bit:ALU_GEN:21:ALU_inst.Result
+Result[22] <= alu_1bit:ALU_GEN:22:ALU_inst.Result
+Result[23] <= alu_1bit:ALU_GEN:23:ALU_inst.Result
+Result[24] <= alu_1bit:ALU_GEN:24:ALU_inst.Result
+Result[25] <= alu_1bit:ALU_GEN:25:ALU_inst.Result
+Result[26] <= alu_1bit:ALU_GEN:26:ALU_inst.Result
+Result[27] <= alu_1bit:ALU_GEN:27:ALU_inst.Result
+Result[28] <= alu_1bit:ALU_GEN:28:ALU_inst.Result
+Result[29] <= alu_1bit:ALU_GEN:29:ALU_inst.Result
+Result[30] <= alu_1bit:ALU_GEN:30:ALU_inst.Result
+Result[31] <= alu_1bit:ALU_MSB.Result
+Overflow <= alu_1bit:ALU_MSB.Overflow
+Zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:ALU_MSB
+A => mux_2:A_mux.I0
+A => mux_2:A_mux.I1
+B => mux_2:B_mux.I0
+B => mux_2:B_mux.I1
+CarryIn => full_adder:FullAdder_Add.c_in
+CarryIn => full_adder:FullAdder_Sub.c_in
+Ainvert => mux_2:A_mux.S
+Binvert => mux_2:B_mux.S
+Operation[0] => mux_6:Operation_Select.S[0]
+Operation[0] => Equal0.IN2
+Operation[1] => mux_6:Operation_Select.S[1]
+Operation[1] => Equal0.IN3
+Operation[2] => mux_6:Operation_Select.S[2]
+Operation[2] => Equal0.IN1
+Operation[3] => mux_6:Operation_Select.S[3]
+Operation[3] => Equal0.IN0
+Less => mux_6:Operation_Select.I4
+Result <= mux_6:Operation_Select.O
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+Set <= full_adder:FullAdder_Sub.sum
+Overflow <= overflow_detection:OverflowDetect.overflow
+
+
+|ALU101|ALU_1bit:ALU_MSB|mux_2:A_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:ALU_MSB|mux_2:B_mux
+I0 => O.DATAB
+I1 => O.DATAA
+S => O.OUTPUTSELECT
+O <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:ALU_MSB|full_adder:FullAdder_Add
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:ALU_MSB|full_adder:FullAdder_Sub
+a => sum.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:ALU_MSB|overflow_detection:OverflowDetect
+a => overflow.IN0
+a => overflow.IN0
+a => overflow.IN0
+b => overflow.IN1
+b => overflow.IN1
+sum => overflow.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU101|ALU_1bit:ALU_MSB|mux_6:Operation_Select
+I0 => Mux0.IN10
+I1 => Mux0.IN11
+I2 => Mux0.IN12
+I3 => Mux0.IN13
+I4 => Mux0.IN14
+I5 => Mux0.IN15
+S[0] => Mux0.IN19
+S[1] => Mux0.IN18
+S[2] => Mux0.IN17
+S[3] => Mux0.IN16
+O <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

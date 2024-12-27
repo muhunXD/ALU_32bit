@@ -1,0 +1,44 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity ALU_1bit is
+    port (
+        A, B       : in std_logic;
+        CarryIn    : in std_logic;
+        Less       : in std_logic;  -- Used for SLT operation
+        Ainvert    : in std_logic;
+        Binvert    : in std_logic;
+        Operation  : in std_logic_vector(1 downto 0);
+        Result     : out std_logic;
+        CarryOut   : out std_logic;
+        Set        : out std_logic  -- To propagate Less
+    );
+end entity;
+
+architecture Behavior of ALU_1bit is
+    signal A_in, B_in, Sum : std_logic;
+begin
+    -- Input inversion
+    A_in <= A xor Ainvert;
+    B_in <= B xor Binvert;
+
+    -- Full adder logic
+    Sum <= (A_in xor B_in) xor CarryIn;
+    CarryOut <= (A_in and B_in) or ((A_in xor B_in) and CarryIn);
+
+    -- Operation selection
+    process (A_in, B_in, Sum, Operation)
+    begin
+        case Operation is
+            when "00" => Result <= A_in and B_in;  -- AND
+            when "01" => Result <= A_in or B_in;   -- OR
+            when "10" => Result <= Sum;            -- ADD/SUB
+            when "11" => Result <= Less;           -- SLT
+            when others => Result <= '0';
+        end case;
+    end process;
+
+    Set <= Sum; -- Used for SLT to propagate the result of subtraction.
+end architecture;

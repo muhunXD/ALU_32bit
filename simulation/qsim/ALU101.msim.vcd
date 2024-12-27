@@ -1,0 +1,1224 @@
+$comment
+	File created using the following command:
+		vcd file ALU101.msim.vcd -direction
+$end
+$date
+	Sat Dec 28 02:29:48 2024
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module alu101_vhd_vec_tst $end
+$var wire 1 ! A [31] $end
+$var wire 1 " A [30] $end
+$var wire 1 # A [29] $end
+$var wire 1 $ A [28] $end
+$var wire 1 % A [27] $end
+$var wire 1 & A [26] $end
+$var wire 1 ' A [25] $end
+$var wire 1 ( A [24] $end
+$var wire 1 ) A [23] $end
+$var wire 1 * A [22] $end
+$var wire 1 + A [21] $end
+$var wire 1 , A [20] $end
+$var wire 1 - A [19] $end
+$var wire 1 . A [18] $end
+$var wire 1 / A [17] $end
+$var wire 1 0 A [16] $end
+$var wire 1 1 A [15] $end
+$var wire 1 2 A [14] $end
+$var wire 1 3 A [13] $end
+$var wire 1 4 A [12] $end
+$var wire 1 5 A [11] $end
+$var wire 1 6 A [10] $end
+$var wire 1 7 A [9] $end
+$var wire 1 8 A [8] $end
+$var wire 1 9 A [7] $end
+$var wire 1 : A [6] $end
+$var wire 1 ; A [5] $end
+$var wire 1 < A [4] $end
+$var wire 1 = A [3] $end
+$var wire 1 > A [2] $end
+$var wire 1 ? A [1] $end
+$var wire 1 @ A [0] $end
+$var wire 1 A Ainvert $end
+$var wire 1 B B [31] $end
+$var wire 1 C B [30] $end
+$var wire 1 D B [29] $end
+$var wire 1 E B [28] $end
+$var wire 1 F B [27] $end
+$var wire 1 G B [26] $end
+$var wire 1 H B [25] $end
+$var wire 1 I B [24] $end
+$var wire 1 J B [23] $end
+$var wire 1 K B [22] $end
+$var wire 1 L B [21] $end
+$var wire 1 M B [20] $end
+$var wire 1 N B [19] $end
+$var wire 1 O B [18] $end
+$var wire 1 P B [17] $end
+$var wire 1 Q B [16] $end
+$var wire 1 R B [15] $end
+$var wire 1 S B [14] $end
+$var wire 1 T B [13] $end
+$var wire 1 U B [12] $end
+$var wire 1 V B [11] $end
+$var wire 1 W B [10] $end
+$var wire 1 X B [9] $end
+$var wire 1 Y B [8] $end
+$var wire 1 Z B [7] $end
+$var wire 1 [ B [6] $end
+$var wire 1 \ B [5] $end
+$var wire 1 ] B [4] $end
+$var wire 1 ^ B [3] $end
+$var wire 1 _ B [2] $end
+$var wire 1 ` B [1] $end
+$var wire 1 a B [0] $end
+$var wire 1 b Binvert $end
+$var wire 1 c Operation [3] $end
+$var wire 1 d Operation [2] $end
+$var wire 1 e Operation [1] $end
+$var wire 1 f Operation [0] $end
+$var wire 1 g Overflow $end
+$var wire 1 h Result [31] $end
+$var wire 1 i Result [30] $end
+$var wire 1 j Result [29] $end
+$var wire 1 k Result [28] $end
+$var wire 1 l Result [27] $end
+$var wire 1 m Result [26] $end
+$var wire 1 n Result [25] $end
+$var wire 1 o Result [24] $end
+$var wire 1 p Result [23] $end
+$var wire 1 q Result [22] $end
+$var wire 1 r Result [21] $end
+$var wire 1 s Result [20] $end
+$var wire 1 t Result [19] $end
+$var wire 1 u Result [18] $end
+$var wire 1 v Result [17] $end
+$var wire 1 w Result [16] $end
+$var wire 1 x Result [15] $end
+$var wire 1 y Result [14] $end
+$var wire 1 z Result [13] $end
+$var wire 1 { Result [12] $end
+$var wire 1 | Result [11] $end
+$var wire 1 } Result [10] $end
+$var wire 1 ~ Result [9] $end
+$var wire 1 !! Result [8] $end
+$var wire 1 "! Result [7] $end
+$var wire 1 #! Result [6] $end
+$var wire 1 $! Result [5] $end
+$var wire 1 %! Result [4] $end
+$var wire 1 &! Result [3] $end
+$var wire 1 '! Result [2] $end
+$var wire 1 (! Result [1] $end
+$var wire 1 )! Result [0] $end
+$var wire 1 *! Zero $end
+
+$scope module i1 $end
+$var wire 1 +! gnd $end
+$var wire 1 ,! vcc $end
+$var wire 1 -! unknown $end
+$var wire 1 .! devoe $end
+$var wire 1 /! devclrn $end
+$var wire 1 0! devpor $end
+$var wire 1 1! ww_devoe $end
+$var wire 1 2! ww_devclrn $end
+$var wire 1 3! ww_devpor $end
+$var wire 1 4! ww_A [31] $end
+$var wire 1 5! ww_A [30] $end
+$var wire 1 6! ww_A [29] $end
+$var wire 1 7! ww_A [28] $end
+$var wire 1 8! ww_A [27] $end
+$var wire 1 9! ww_A [26] $end
+$var wire 1 :! ww_A [25] $end
+$var wire 1 ;! ww_A [24] $end
+$var wire 1 <! ww_A [23] $end
+$var wire 1 =! ww_A [22] $end
+$var wire 1 >! ww_A [21] $end
+$var wire 1 ?! ww_A [20] $end
+$var wire 1 @! ww_A [19] $end
+$var wire 1 A! ww_A [18] $end
+$var wire 1 B! ww_A [17] $end
+$var wire 1 C! ww_A [16] $end
+$var wire 1 D! ww_A [15] $end
+$var wire 1 E! ww_A [14] $end
+$var wire 1 F! ww_A [13] $end
+$var wire 1 G! ww_A [12] $end
+$var wire 1 H! ww_A [11] $end
+$var wire 1 I! ww_A [10] $end
+$var wire 1 J! ww_A [9] $end
+$var wire 1 K! ww_A [8] $end
+$var wire 1 L! ww_A [7] $end
+$var wire 1 M! ww_A [6] $end
+$var wire 1 N! ww_A [5] $end
+$var wire 1 O! ww_A [4] $end
+$var wire 1 P! ww_A [3] $end
+$var wire 1 Q! ww_A [2] $end
+$var wire 1 R! ww_A [1] $end
+$var wire 1 S! ww_A [0] $end
+$var wire 1 T! ww_B [31] $end
+$var wire 1 U! ww_B [30] $end
+$var wire 1 V! ww_B [29] $end
+$var wire 1 W! ww_B [28] $end
+$var wire 1 X! ww_B [27] $end
+$var wire 1 Y! ww_B [26] $end
+$var wire 1 Z! ww_B [25] $end
+$var wire 1 [! ww_B [24] $end
+$var wire 1 \! ww_B [23] $end
+$var wire 1 ]! ww_B [22] $end
+$var wire 1 ^! ww_B [21] $end
+$var wire 1 _! ww_B [20] $end
+$var wire 1 `! ww_B [19] $end
+$var wire 1 a! ww_B [18] $end
+$var wire 1 b! ww_B [17] $end
+$var wire 1 c! ww_B [16] $end
+$var wire 1 d! ww_B [15] $end
+$var wire 1 e! ww_B [14] $end
+$var wire 1 f! ww_B [13] $end
+$var wire 1 g! ww_B [12] $end
+$var wire 1 h! ww_B [11] $end
+$var wire 1 i! ww_B [10] $end
+$var wire 1 j! ww_B [9] $end
+$var wire 1 k! ww_B [8] $end
+$var wire 1 l! ww_B [7] $end
+$var wire 1 m! ww_B [6] $end
+$var wire 1 n! ww_B [5] $end
+$var wire 1 o! ww_B [4] $end
+$var wire 1 p! ww_B [3] $end
+$var wire 1 q! ww_B [2] $end
+$var wire 1 r! ww_B [1] $end
+$var wire 1 s! ww_B [0] $end
+$var wire 1 t! ww_Ainvert $end
+$var wire 1 u! ww_Binvert $end
+$var wire 1 v! ww_Operation [3] $end
+$var wire 1 w! ww_Operation [2] $end
+$var wire 1 x! ww_Operation [1] $end
+$var wire 1 y! ww_Operation [0] $end
+$var wire 1 z! ww_Result [31] $end
+$var wire 1 {! ww_Result [30] $end
+$var wire 1 |! ww_Result [29] $end
+$var wire 1 }! ww_Result [28] $end
+$var wire 1 ~! ww_Result [27] $end
+$var wire 1 !" ww_Result [26] $end
+$var wire 1 "" ww_Result [25] $end
+$var wire 1 #" ww_Result [24] $end
+$var wire 1 $" ww_Result [23] $end
+$var wire 1 %" ww_Result [22] $end
+$var wire 1 &" ww_Result [21] $end
+$var wire 1 '" ww_Result [20] $end
+$var wire 1 (" ww_Result [19] $end
+$var wire 1 )" ww_Result [18] $end
+$var wire 1 *" ww_Result [17] $end
+$var wire 1 +" ww_Result [16] $end
+$var wire 1 ," ww_Result [15] $end
+$var wire 1 -" ww_Result [14] $end
+$var wire 1 ." ww_Result [13] $end
+$var wire 1 /" ww_Result [12] $end
+$var wire 1 0" ww_Result [11] $end
+$var wire 1 1" ww_Result [10] $end
+$var wire 1 2" ww_Result [9] $end
+$var wire 1 3" ww_Result [8] $end
+$var wire 1 4" ww_Result [7] $end
+$var wire 1 5" ww_Result [6] $end
+$var wire 1 6" ww_Result [5] $end
+$var wire 1 7" ww_Result [4] $end
+$var wire 1 8" ww_Result [3] $end
+$var wire 1 9" ww_Result [2] $end
+$var wire 1 :" ww_Result [1] $end
+$var wire 1 ;" ww_Result [0] $end
+$var wire 1 <" ww_Overflow $end
+$var wire 1 =" ww_Zero $end
+$var wire 1 >" \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [4] $end
+$var wire 1 ?" \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [3] $end
+$var wire 1 @" \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [2] $end
+$var wire 1 A" \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [1] $end
+$var wire 1 B" \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [0] $end
+$var wire 1 C" \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 D" \~QUARTUS_CREATED_UNVM~~busy\ $end
+$var wire 1 E" \~QUARTUS_CREATED_ADC1~~eoc\ $end
+$var wire 1 F" \Result[0]~output_o\ $end
+$var wire 1 G" \Result[1]~output_o\ $end
+$var wire 1 H" \Result[2]~output_o\ $end
+$var wire 1 I" \Result[3]~output_o\ $end
+$var wire 1 J" \Result[4]~output_o\ $end
+$var wire 1 K" \Result[5]~output_o\ $end
+$var wire 1 L" \Result[6]~output_o\ $end
+$var wire 1 M" \Result[7]~output_o\ $end
+$var wire 1 N" \Result[8]~output_o\ $end
+$var wire 1 O" \Result[9]~output_o\ $end
+$var wire 1 P" \Result[10]~output_o\ $end
+$var wire 1 Q" \Result[11]~output_o\ $end
+$var wire 1 R" \Result[12]~output_o\ $end
+$var wire 1 S" \Result[13]~output_o\ $end
+$var wire 1 T" \Result[14]~output_o\ $end
+$var wire 1 U" \Result[15]~output_o\ $end
+$var wire 1 V" \Result[16]~output_o\ $end
+$var wire 1 W" \Result[17]~output_o\ $end
+$var wire 1 X" \Result[18]~output_o\ $end
+$var wire 1 Y" \Result[19]~output_o\ $end
+$var wire 1 Z" \Result[20]~output_o\ $end
+$var wire 1 [" \Result[21]~output_o\ $end
+$var wire 1 \" \Result[22]~output_o\ $end
+$var wire 1 ]" \Result[23]~output_o\ $end
+$var wire 1 ^" \Result[24]~output_o\ $end
+$var wire 1 _" \Result[25]~output_o\ $end
+$var wire 1 `" \Result[26]~output_o\ $end
+$var wire 1 a" \Result[27]~output_o\ $end
+$var wire 1 b" \Result[28]~output_o\ $end
+$var wire 1 c" \Result[29]~output_o\ $end
+$var wire 1 d" \Result[30]~output_o\ $end
+$var wire 1 e" \Result[31]~output_o\ $end
+$var wire 1 f" \Overflow~output_o\ $end
+$var wire 1 g" \Zero~output_o\ $end
+$var wire 1 h" \A[0]~input_o\ $end
+$var wire 1 i" \Ainvert~input_o\ $end
+$var wire 1 j" \ALU_GEN:0:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 k" \Binvert~input_o\ $end
+$var wire 1 l" \B[0]~input_o\ $end
+$var wire 1 m" \ALU_GEN:0:ALU_inst|B_mux|O~0_combout\ $end
+$var wire 1 n" \Operation[3]~input_o\ $end
+$var wire 1 o" \Operation[0]~input_o\ $end
+$var wire 1 p" \ALU_GEN:0:ALU_inst|Operation_Select|Mux0~12_combout\ $end
+$var wire 1 q" \Operation[1]~input_o\ $end
+$var wire 1 r" \Operation[2]~input_o\ $end
+$var wire 1 s" \ALU_GEN:0:ALU_inst|Operation_Select|Mux0~10_combout\ $end
+$var wire 1 t" \ALU_GEN:0:ALU_inst|Operation_Select|Mux0~16_combout\ $end
+$var wire 1 u" \ALU_GEN:0:ALU_inst|Operation_Select|Mux0~11_combout\ $end
+$var wire 1 v" \ALU_GEN:0:ALU_inst|Operation_Select|Mux0~17_combout\ $end
+$var wire 1 w" \ALU_GEN:0:ALU_inst|Operation_Select|Mux0~13_combout\ $end
+$var wire 1 x" \ALU_GEN:0:ALU_inst|Operation_Select|Mux0~14_combout\ $end
+$var wire 1 y" \ALU_GEN:0:ALU_inst|Operation_Select|Mux0~15_combout\ $end
+$var wire 1 z" \ALU_GEN:0:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 {" \A[1]~input_o\ $end
+$var wire 1 |" \ALU_GEN:1:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 }" \ALU_GEN:0:ALU_inst|AndOut~combout\ $end
+$var wire 1 ~" \B[1]~input_o\ $end
+$var wire 1 !# \ALU_GEN:1:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 "# \ALU_GEN:1:ALU_inst|AndOut~combout\ $end
+$var wire 1 ## \ALU_GEN:1:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 $# \ALU_GEN:1:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 %# \ALU_GEN:1:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 &# \ALU_GEN:1:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 '# \A[2]~input_o\ $end
+$var wire 1 (# \ALU_GEN:2:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 )# \B[2]~input_o\ $end
+$var wire 1 *# \ALU_GEN:1:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 +# \ALU_GEN:2:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 ,# \ALU_GEN:2:ALU_inst|AndOut~combout\ $end
+$var wire 1 -# \ALU_GEN:2:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 .# \ALU_GEN:2:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 /# \ALU_GEN:2:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 0# \ALU_GEN:2:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 1# \A[3]~input_o\ $end
+$var wire 1 2# \ALU_GEN:3:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 3# \B[3]~input_o\ $end
+$var wire 1 4# \ALU_GEN:3:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 5# \ALU_GEN:3:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 6# \ALU_GEN:3:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 7# \ALU_GEN:3:ALU_inst|AndOut~combout\ $end
+$var wire 1 8# \ALU_GEN:2:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 9# \ALU_GEN:3:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 :# \ALU_GEN:3:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 ;# \A[4]~input_o\ $end
+$var wire 1 <# \ALU_GEN:4:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 =# \ALU_GEN:3:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 ># \B[4]~input_o\ $end
+$var wire 1 ?# \ALU_GEN:4:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 @# \ALU_GEN:4:ALU_inst|AndOut~combout\ $end
+$var wire 1 A# \ALU_GEN:4:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 B# \ALU_GEN:4:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 C# \ALU_GEN:4:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 D# \ALU_GEN:4:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 E# \A[5]~input_o\ $end
+$var wire 1 F# \ALU_GEN:5:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 G# \ALU_GEN:4:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 H# \B[5]~input_o\ $end
+$var wire 1 I# \ALU_GEN:5:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 J# \ALU_GEN:5:ALU_inst|AndOut~combout\ $end
+$var wire 1 K# \ALU_GEN:5:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 L# \ALU_GEN:5:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 M# \ALU_GEN:5:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 N# \ALU_GEN:5:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 O# \B[6]~input_o\ $end
+$var wire 1 P# \A[6]~input_o\ $end
+$var wire 1 Q# \ALU_GEN:6:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 R# \ALU_GEN:6:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 S# \ALU_GEN:6:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 T# \ALU_GEN:6:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 U# \ALU_GEN:6:ALU_inst|AndOut~combout\ $end
+$var wire 1 V# \ALU_GEN:5:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 W# \ALU_GEN:6:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 X# \ALU_GEN:6:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 Y# \A[7]~input_o\ $end
+$var wire 1 Z# \ALU_GEN:7:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 [# \B[7]~input_o\ $end
+$var wire 1 \# \ALU_GEN:7:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 ]# \ALU_GEN:7:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 ^# \ALU_GEN:7:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 _# \ALU_GEN:7:ALU_inst|AndOut~combout\ $end
+$var wire 1 `# \ALU_GEN:6:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 a# \ALU_GEN:7:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 b# \ALU_GEN:7:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 c# \A[8]~input_o\ $end
+$var wire 1 d# \ALU_GEN:8:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 e# \ALU_GEN:7:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 f# \B[8]~input_o\ $end
+$var wire 1 g# \ALU_GEN:8:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 h# \ALU_GEN:8:ALU_inst|AndOut~combout\ $end
+$var wire 1 i# \ALU_GEN:8:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 j# \ALU_GEN:8:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 k# \ALU_GEN:8:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 l# \ALU_GEN:8:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 m# \ALU_GEN:8:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 n# \B[9]~input_o\ $end
+$var wire 1 o# \A[9]~input_o\ $end
+$var wire 1 p# \ALU_GEN:9:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 q# \ALU_GEN:9:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 r# \ALU_GEN:9:ALU_inst|AndOut~combout\ $end
+$var wire 1 s# \ALU_GEN:9:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 t# \ALU_GEN:9:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 u# \ALU_GEN:9:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 v# \ALU_GEN:9:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 w# \A[10]~input_o\ $end
+$var wire 1 x# \ALU_GEN:10:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 y# \B[10]~input_o\ $end
+$var wire 1 z# \ALU_GEN:9:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 {# \ALU_GEN:10:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 |# \ALU_GEN:10:ALU_inst|AndOut~combout\ $end
+$var wire 1 }# \ALU_GEN:10:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 ~# \ALU_GEN:10:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 !$ \ALU_GEN:10:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 "$ \ALU_GEN:10:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 #$ \A[11]~input_o\ $end
+$var wire 1 $$ \ALU_GEN:11:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 %$ \B[11]~input_o\ $end
+$var wire 1 &$ \ALU_GEN:11:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 '$ \ALU_GEN:11:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 ($ \ALU_GEN:11:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 )$ \ALU_GEN:11:ALU_inst|AndOut~combout\ $end
+$var wire 1 *$ \ALU_GEN:10:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 +$ \ALU_GEN:11:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 ,$ \ALU_GEN:11:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 -$ \A[12]~input_o\ $end
+$var wire 1 .$ \ALU_GEN:12:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 /$ \ALU_GEN:11:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 0$ \B[12]~input_o\ $end
+$var wire 1 1$ \ALU_GEN:12:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 2$ \ALU_GEN:12:ALU_inst|AndOut~combout\ $end
+$var wire 1 3$ \ALU_GEN:12:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 4$ \ALU_GEN:12:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 5$ \ALU_GEN:12:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 6$ \ALU_GEN:12:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 7$ \A[13]~input_o\ $end
+$var wire 1 8$ \ALU_GEN:13:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 9$ \ALU_GEN:12:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 :$ \B[13]~input_o\ $end
+$var wire 1 ;$ \ALU_GEN:13:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 <$ \ALU_GEN:13:ALU_inst|AndOut~combout\ $end
+$var wire 1 =$ \ALU_GEN:13:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 >$ \ALU_GEN:13:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 ?$ \ALU_GEN:13:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 @$ \ALU_GEN:13:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 A$ \A[14]~input_o\ $end
+$var wire 1 B$ \ALU_GEN:14:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 C$ \B[14]~input_o\ $end
+$var wire 1 D$ \ALU_GEN:13:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 E$ \ALU_GEN:14:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 F$ \ALU_GEN:14:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 G$ \ALU_GEN:14:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 H$ \ALU_GEN:14:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 I$ \ALU_GEN:14:ALU_inst|AndOut~combout\ $end
+$var wire 1 J$ \ALU_GEN:14:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 K$ \A[15]~input_o\ $end
+$var wire 1 L$ \ALU_GEN:15:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 M$ \B[15]~input_o\ $end
+$var wire 1 N$ \ALU_GEN:15:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 O$ \ALU_GEN:15:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 P$ \ALU_GEN:15:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 Q$ \ALU_GEN:15:ALU_inst|AndOut~combout\ $end
+$var wire 1 R$ \ALU_GEN:14:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 S$ \ALU_GEN:15:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 T$ \ALU_GEN:15:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 U$ \A[16]~input_o\ $end
+$var wire 1 V$ \ALU_GEN:16:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 W$ \B[16]~input_o\ $end
+$var wire 1 X$ \ALU_GEN:16:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 Y$ \ALU_GEN:16:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 Z$ \ALU_GEN:16:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 [$ \ALU_GEN:16:ALU_inst|AndOut~combout\ $end
+$var wire 1 \$ \ALU_GEN:15:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 ]$ \ALU_GEN:16:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 ^$ \ALU_GEN:16:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 _$ \B[17]~input_o\ $end
+$var wire 1 `$ \A[17]~input_o\ $end
+$var wire 1 a$ \ALU_GEN:17:ALU_inst|AndOut~combout\ $end
+$var wire 1 b$ \ALU_GEN:17:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 c$ \ALU_GEN:17:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 d$ \ALU_GEN:17:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 e$ \ALU_GEN:17:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 f$ \ALU_GEN:16:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 g$ \ALU_GEN:17:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 h$ \ALU_GEN:17:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 i$ \A[18]~input_o\ $end
+$var wire 1 j$ \ALU_GEN:18:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 k$ \B[18]~input_o\ $end
+$var wire 1 l$ \ALU_GEN:17:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 m$ \ALU_GEN:18:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 n$ \ALU_GEN:18:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 o$ \ALU_GEN:18:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 p$ \ALU_GEN:18:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 q$ \ALU_GEN:18:ALU_inst|AndOut~combout\ $end
+$var wire 1 r$ \ALU_GEN:18:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 s$ \A[19]~input_o\ $end
+$var wire 1 t$ \ALU_GEN:19:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 u$ \B[19]~input_o\ $end
+$var wire 1 v$ \ALU_GEN:18:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 w$ \ALU_GEN:19:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 x$ \ALU_GEN:19:ALU_inst|AndOut~combout\ $end
+$var wire 1 y$ \ALU_GEN:19:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 z$ \ALU_GEN:19:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 {$ \ALU_GEN:19:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 |$ \ALU_GEN:19:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 }$ \A[20]~input_o\ $end
+$var wire 1 ~$ \ALU_GEN:20:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 !% \B[20]~input_o\ $end
+$var wire 1 "% \ALU_GEN:20:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 #% \ALU_GEN:20:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 $% \ALU_GEN:20:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 %% \ALU_GEN:20:ALU_inst|AndOut~combout\ $end
+$var wire 1 &% \ALU_GEN:19:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 '% \ALU_GEN:20:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 (% \ALU_GEN:20:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 )% \A[21]~input_o\ $end
+$var wire 1 *% \ALU_GEN:21:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 +% \ALU_GEN:20:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 ,% \B[21]~input_o\ $end
+$var wire 1 -% \ALU_GEN:21:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 .% \ALU_GEN:21:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 /% \ALU_GEN:21:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 0% \ALU_GEN:21:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 1% \ALU_GEN:21:ALU_inst|AndOut~combout\ $end
+$var wire 1 2% \ALU_GEN:21:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 3% \A[22]~input_o\ $end
+$var wire 1 4% \ALU_GEN:22:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 5% \B[22]~input_o\ $end
+$var wire 1 6% \ALU_GEN:22:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 7% \ALU_GEN:22:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 8% \ALU_GEN:22:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 9% \ALU_GEN:21:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 :% \ALU_GEN:22:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 ;% \ALU_GEN:22:ALU_inst|AndOut~combout\ $end
+$var wire 1 <% \ALU_GEN:22:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 =% \A[23]~input_o\ $end
+$var wire 1 >% \ALU_GEN:23:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 ?% \ALU_GEN:22:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 @% \B[23]~input_o\ $end
+$var wire 1 A% \ALU_GEN:23:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 B% \ALU_GEN:23:ALU_inst|AndOut~combout\ $end
+$var wire 1 C% \ALU_GEN:23:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 D% \ALU_GEN:23:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 E% \ALU_GEN:23:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 F% \ALU_GEN:23:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 G% \A[24]~input_o\ $end
+$var wire 1 H% \ALU_GEN:24:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 I% \B[24]~input_o\ $end
+$var wire 1 J% \ALU_GEN:24:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 K% \ALU_GEN:24:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 L% \ALU_GEN:24:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 M% \ALU_GEN:24:ALU_inst|AndOut~combout\ $end
+$var wire 1 N% \ALU_GEN:23:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 O% \ALU_GEN:24:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 P% \ALU_GEN:24:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 Q% \A[25]~input_o\ $end
+$var wire 1 R% \ALU_GEN:25:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 S% \ALU_GEN:24:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 T% \B[25]~input_o\ $end
+$var wire 1 U% \ALU_GEN:25:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 V% \ALU_GEN:25:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 W% \ALU_GEN:25:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 X% \ALU_GEN:25:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 Y% \ALU_GEN:25:ALU_inst|AndOut~combout\ $end
+$var wire 1 Z% \ALU_GEN:25:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 [% \A[26]~input_o\ $end
+$var wire 1 \% \ALU_GEN:26:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 ]% \B[26]~input_o\ $end
+$var wire 1 ^% \ALU_GEN:25:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 _% \ALU_GEN:26:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 `% \ALU_GEN:26:ALU_inst|AndOut~combout\ $end
+$var wire 1 a% \ALU_GEN:26:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 b% \ALU_GEN:26:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 c% \ALU_GEN:26:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 d% \ALU_GEN:26:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 e% \A[27]~input_o\ $end
+$var wire 1 f% \ALU_GEN:27:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 g% \ALU_GEN:26:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 h% \B[27]~input_o\ $end
+$var wire 1 i% \ALU_GEN:27:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 j% \ALU_GEN:27:ALU_inst|AndOut~combout\ $end
+$var wire 1 k% \ALU_GEN:27:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 l% \ALU_GEN:27:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 m% \ALU_GEN:27:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 n% \ALU_GEN:27:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 o% \B[28]~input_o\ $end
+$var wire 1 p% \A[28]~input_o\ $end
+$var wire 1 q% \ALU_GEN:28:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 r% \ALU_GEN:28:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 s% \ALU_GEN:28:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 t% \ALU_GEN:28:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 u% \ALU_GEN:28:ALU_inst|AndOut~combout\ $end
+$var wire 1 v% \ALU_GEN:27:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 w% \ALU_GEN:28:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 x% \ALU_GEN:28:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 y% \A[29]~input_o\ $end
+$var wire 1 z% \ALU_GEN:29:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 {% \B[29]~input_o\ $end
+$var wire 1 |% \ALU_GEN:29:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 }% \ALU_GEN:29:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 ~% \ALU_GEN:29:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 !& \ALU_GEN:28:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 "& \ALU_GEN:29:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 #& \ALU_GEN:29:ALU_inst|AndOut~combout\ $end
+$var wire 1 $& \ALU_GEN:29:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 %& \A[30]~input_o\ $end
+$var wire 1 && \ALU_GEN:30:ALU_inst|A_mux|O~0_combout\ $end
+$var wire 1 '& \ALU_GEN:29:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 (& \B[30]~input_o\ $end
+$var wire 1 )& \ALU_GEN:30:ALU_inst|FullAdder_Add|sum~combout\ $end
+$var wire 1 *& \ALU_GEN:30:ALU_inst|AndOut~combout\ $end
+$var wire 1 +& \ALU_GEN:30:ALU_inst|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 ,& \ALU_GEN:30:ALU_inst|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 -& \ALU_GEN:30:ALU_inst|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 .& \ALU_GEN:30:ALU_inst|Operation_Select|Mux0~combout\ $end
+$var wire 1 /& \A[31]~input_o\ $end
+$var wire 1 0& \ALU_MSB|A_mux|O~0_combout\ $end
+$var wire 1 1& \B[31]~input_o\ $end
+$var wire 1 2& \ALU_MSB|Operation_Select|Mux0~1_combout\ $end
+$var wire 1 3& \ALU_MSB|Operation_Select|Mux0~0_combout\ $end
+$var wire 1 4& \ALU_MSB|Operation_Select|Mux0~2_combout\ $end
+$var wire 1 5& \ALU_MSB|AndOut~combout\ $end
+$var wire 1 6& \ALU_GEN:30:ALU_inst|FullAdder_Sub|c_out~0_combout\ $end
+$var wire 1 7& \ALU_MSB|FullAdder_Add|sum~combout\ $end
+$var wire 1 8& \ALU_MSB|Operation_Select|Mux0~combout\ $end
+$var wire 1 9& \ALU_MSB|OverflowDetect|overflow~0_combout\ $end
+$var wire 1 :& \Equal0~9_combout\ $end
+$var wire 1 ;& \Equal0~6_combout\ $end
+$var wire 1 <& \Equal0~5_combout\ $end
+$var wire 1 =& \Equal0~7_combout\ $end
+$var wire 1 >& \Equal0~3_combout\ $end
+$var wire 1 ?& \Equal0~1_combout\ $end
+$var wire 1 @& \Equal0~0_combout\ $end
+$var wire 1 A& \Equal0~2_combout\ $end
+$var wire 1 B& \Equal0~4_combout\ $end
+$var wire 1 C& \Equal0~8_combout\ $end
+$var wire 1 D& \Equal0~10_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0A
+0b
+0g
+0*!
+0+!
+1,!
+x-!
+1.!
+1/!
+10!
+11!
+12!
+13!
+0t!
+0u!
+0<"
+0="
+0C"
+zD"
+zE"
+0F"
+0G"
+0H"
+0I"
+1J"
+0K"
+0L"
+0M"
+0N"
+0O"
+0P"
+0Q"
+0R"
+0S"
+0T"
+0U"
+0V"
+0W"
+0X"
+0Y"
+0Z"
+0["
+0\"
+0]"
+0^"
+0_"
+0`"
+0a"
+0b"
+0c"
+0d"
+0e"
+0f"
+0g"
+0h"
+0i"
+0j"
+0k"
+0l"
+0m"
+0n"
+0o"
+0p"
+1q"
+1r"
+1s"
+0t"
+0u"
+1v"
+1w"
+1x"
+1y"
+0z"
+1{"
+1|"
+0}"
+1~"
+0!#
+1"#
+0##
+1$#
+1%#
+0&#
+0'#
+0(#
+1)#
+1*#
+0+#
+0,#
+1-#
+0.#
+1/#
+00#
+11#
+12#
+03#
+04#
+15#
+16#
+07#
+18#
+09#
+0:#
+0;#
+0<#
+1=#
+0>#
+1?#
+0@#
+0A#
+1B#
+1C#
+1D#
+0E#
+0F#
+0G#
+0H#
+0I#
+0J#
+0K#
+1L#
+1M#
+0N#
+0O#
+0P#
+0Q#
+0R#
+1S#
+1T#
+0U#
+0V#
+0W#
+0X#
+0Y#
+0Z#
+0[#
+0\#
+1]#
+1^#
+0_#
+0`#
+0a#
+0b#
+0c#
+0d#
+0e#
+0f#
+0g#
+0h#
+1i#
+0j#
+1k#
+0l#
+0m#
+0n#
+0o#
+0p#
+0q#
+0r#
+0s#
+1t#
+1u#
+0v#
+0w#
+0x#
+0y#
+0z#
+0{#
+0|#
+1}#
+0~#
+1!$
+0"$
+0#$
+0$$
+0%$
+0&$
+1'$
+1($
+0)$
+0*$
+0+$
+0,$
+0-$
+0.$
+0/$
+00$
+01$
+02$
+03$
+14$
+15$
+06$
+07$
+08$
+09$
+0:$
+0;$
+0<$
+0=$
+1>$
+1?$
+0@$
+0A$
+0B$
+0C$
+0D$
+0E$
+0F$
+1G$
+1H$
+0I$
+0J$
+0K$
+0L$
+0M$
+0N$
+1O$
+1P$
+0Q$
+0R$
+0S$
+0T$
+0U$
+0V$
+0W$
+1X$
+0Y$
+1Z$
+0[$
+0\$
+0]$
+0^$
+0_$
+0`$
+0a$
+0b$
+0c$
+1d$
+1e$
+0f$
+0g$
+0h$
+0i$
+0j$
+0k$
+0l$
+0m$
+1n$
+0o$
+1p$
+0q$
+0r$
+0s$
+0t$
+0u$
+0v$
+0w$
+0x$
+1y$
+0z$
+1{$
+0|$
+0}$
+0~$
+0!%
+0"%
+1#%
+1$%
+0%%
+0&%
+0'%
+0(%
+0)%
+0*%
+0+%
+0,%
+0-%
+0.%
+1/%
+10%
+01%
+02%
+03%
+04%
+05%
+06%
+17%
+18%
+09%
+0:%
+0;%
+0<%
+0=%
+0>%
+0?%
+0@%
+0A%
+0B%
+0C%
+1D%
+1E%
+0F%
+0G%
+0H%
+0I%
+0J%
+1K%
+1L%
+0M%
+0N%
+0O%
+0P%
+0Q%
+0R%
+0S%
+0T%
+0U%
+0V%
+1W%
+1X%
+0Y%
+0Z%
+0[%
+0\%
+0]%
+0^%
+0_%
+0`%
+0a%
+1b%
+1c%
+0d%
+0e%
+0f%
+0g%
+0h%
+0i%
+0j%
+0k%
+1l%
+1m%
+0n%
+0o%
+0p%
+0q%
+1r%
+0s%
+1t%
+0u%
+0v%
+0w%
+0x%
+0y%
+0z%
+0{%
+0|%
+1}%
+1~%
+0!&
+0"&
+0#&
+0$&
+0%&
+0&&
+0'&
+0(&
+0)&
+0*&
+0+&
+1,&
+1-&
+0.&
+0/&
+00&
+01&
+12&
+03&
+14&
+05&
+06&
+07&
+08&
+09&
+1:&
+1;&
+1<&
+1=&
+1>&
+0?&
+1@&
+1A&
+0B&
+1C&
+0D&
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+1=
+0>
+1?
+0@
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+1_
+1`
+0a
+0c
+1d
+1e
+0f
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+1P!
+0Q!
+1R!
+0S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+0d!
+0e!
+0f!
+0g!
+0h!
+0i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+0p!
+1q!
+1r!
+0s!
+0v!
+1w!
+1x!
+0y!
+0z!
+0{!
+0|!
+0}!
+0~!
+0!"
+0""
+0#"
+0$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+01"
+02"
+03"
+04"
+05"
+06"
+17"
+08"
+09"
+0:"
+0;"
+0>"
+0?"
+0@"
+0A"
+0B"
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+1%!
+0&!
+0'!
+0(!
+0)!
+$end
+#1000000
