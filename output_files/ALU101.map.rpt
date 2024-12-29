@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU101
-Sat Dec 28 02:31:28 2024
+Sun Dec 29 22:58:50 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,46 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "ALU_1bit:ALU_MSB"
+ 11. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:30:ALU_inst"
+ 12. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:29:ALU_inst"
+ 13. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:28:ALU_inst"
+ 14. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:27:ALU_inst"
+ 15. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:26:ALU_inst"
+ 16. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:25:ALU_inst"
+ 17. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:24:ALU_inst"
+ 18. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:23:ALU_inst"
+ 19. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:22:ALU_inst"
+ 20. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:21:ALU_inst"
+ 21. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:20:ALU_inst"
+ 22. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:19:ALU_inst"
+ 23. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:18:ALU_inst"
+ 24. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:17:ALU_inst"
+ 25. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:16:ALU_inst"
+ 26. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:15:ALU_inst"
+ 27. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:14:ALU_inst"
+ 28. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:13:ALU_inst"
+ 29. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:12:ALU_inst"
+ 30. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:11:ALU_inst"
+ 31. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:10:ALU_inst"
+ 32. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:9:ALU_inst"
+ 33. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:8:ALU_inst"
+ 34. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:7:ALU_inst"
+ 35. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:6:ALU_inst"
+ 36. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:5:ALU_inst"
+ 37. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:4:ALU_inst"
+ 38. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:3:ALU_inst"
+ 39. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:2:ALU_inst"
+ 40. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:1:ALU_inst"
+ 41. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:0:ALU_inst"
+ 42. Post-Synthesis Netlist Statistics for Top Partition
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
 
 
 
@@ -37,22 +76,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sat Dec 28 02:31:28 2024           ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 29 22:58:50 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ALU101                                      ;
 ; Top-level Entity Name              ; ALU101                                      ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 272                                         ;
+;     Total combinational functions  ; 272                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 104                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -158,13 +197,601 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; ALU101.vhd                       ; yes             ; User VHDL File  ; D:/Script/202/Computer Organizations/ALU101.vhd       ;         ;
+; ALU_1bit.vhd                     ; yes             ; User VHDL File  ; D:/Script/202/Computer Organizations/ALU_1bit.vhd     ;         ;
+; full_adder.vhd                   ; yes             ; User VHDL File  ; D:/Script/202/Computer Organizations/full_adder.vhd   ;         ;
+; MUX2.vhd                         ; yes             ; User VHDL File  ; D:/Script/202/Computer Organizations/MUX2.vhd         ;         ;
+; MUX6.vhd                         ; yes             ; User VHDL File  ; D:/Script/202/Computer Organizations/MUX6.vhd         ;         ;
+; full_add_sub.vhd                 ; yes             ; User VHDL File  ; D:/Script/202/Computer Organizations/full_add_sub.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 272           ;
+;                                             ;               ;
+; Total combinational functions               ; 272           ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 235           ;
+;     -- 3 input functions                    ; 33            ;
+;     -- <=2 input functions                  ; 4             ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 272           ;
+;     -- arithmetic mode                      ; 0             ;
+;                                             ;               ;
+; Total registers                             ; 0             ;
+;     -- Dedicated logic registers            ; 0             ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 104           ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; Ainvert~input ;
+; Maximum fan-out                             ; 126           ;
+; Total fan-out                               ; 1185          ;
+; Average fan-out                             ; 2.47          ;
++---------------------------------------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                 ;
++---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                      ; Entity Name  ; Library Name ;
++---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------+--------------+--------------+
+; |ALU101                               ; 272 (11)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 104  ; 0            ; 0          ; |ALU101                                                                                  ; ALU101       ; work         ;
+;    |ALU_1bit:ALU_MSB|                 ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_MSB                                                                 ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_MSB|full_add_sub:FullAddSub                                         ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_MSB|full_add_sub:FullAddSub|full_adder:full_adder_inst              ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_MSB|mux_6:Operation_Select                                          ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:0:ALU_inst|     ; 13 (1)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst                                                     ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
+;       |mux_2:A_mux|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_2:A_mux                                         ; mux_2        ; work         ;
+;       |mux_6:Operation_Select|        ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:10:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:11:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:12:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:13:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:14:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:15:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:16:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:17:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:18:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:19:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:1:ALU_inst|     ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst                                                     ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:20:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:21:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:22:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:23:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:24:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:25:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:26:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:27:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:28:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:29:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:2:ALU_inst|     ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst                                                     ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:30:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst                                                    ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst|mux_6:Operation_Select                             ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:3:ALU_inst|     ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst                                                     ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:4:ALU_inst|     ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst                                                     ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:5:ALU_inst|     ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst                                                     ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:6:ALU_inst|     ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst                                                     ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:7:ALU_inst|     ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst                                                     ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:8:ALU_inst|     ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst                                                     ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
+;    |ALU_1bit:\ALU_GEN:9:ALU_inst|     ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst                                                     ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
+;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
++---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; 16:1               ; 32 bits   ; 320 LEs       ; 128 LEs              ; 192 LEs                ; No         ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_6:Operation_Select|Mux0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:ALU_MSB"                                                                       ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:30:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:29:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:28:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:27:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:26:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:25:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:24:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:23:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:22:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:21:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:20:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:19:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:18:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:17:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:16:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:15:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:14:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:13:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:12:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:11:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:10:ALU_inst"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:9:ALU_inst"                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:8:ALU_inst"                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:7:ALU_inst"                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:6:ALU_inst"                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:5:ALU_inst"                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:4:ALU_inst"                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:3:ALU_inst"                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:2:ALU_inst"                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:1:ALU_inst"                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:0:ALU_inst"                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; carryin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 104                         ;
+; cycloneiii_lcell_comb ; 272                         ;
+;     normal            ; 272                         ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 33                          ;
+;         4 data inputs ; 235                         ;
+;                       ;                             ;
+; Max LUT depth         ; 36.00                       ;
+; Average LUT depth     ; 16.61                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Dec 28 02:31:23 2024
+    Info: Processing started: Sun Dec 29 22:58:43 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU101 -c ALU101
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -186,11 +813,28 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux2.vh
 Info (12021): Found 2 design units, including 1 entities, in source file mux6.vhd
     Info (12022): Found design unit 1: mux_6-Behavioral File: D:/Script/202/Computer Organizations/MUX6.vhd Line: 12
     Info (12023): Found entity 1: mux_6 File: D:/Script/202/Computer Organizations/MUX6.vhd Line: 4
-Error (10327): VHDL error at ALU_1bit.vhd(63): can't determine definition of operator ""+"" -- found 0 possible definitions File: D:/Script/202/Computer Organizations/ALU_1bit.vhd Line: 63
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4776 megabytes
-    Error: Processing ended: Sat Dec 28 02:31:29 2024
-    Error: Elapsed time: 00:00:06
-    Error: Total CPU time (on all processors): 00:00:12
+Info (12021): Found 2 design units, including 1 entities, in source file full_add_sub.vhd
+    Info (12022): Found design unit 1: full_add_sub-Behavioral File: D:/Script/202/Computer Organizations/full_add_sub.vhd Line: 14
+    Info (12023): Found entity 1: full_add_sub File: D:/Script/202/Computer Organizations/full_add_sub.vhd Line: 4
+Info (12127): Elaborating entity "ALU101" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at ALU101.vhd(18): object "Less" assigned a value but never read File: D:/Script/202/Computer Organizations/ALU101.vhd Line: 18
+Warning (10873): Using initial value X (don't care) for net "Carry[0]" at ALU101.vhd(17) File: D:/Script/202/Computer Organizations/ALU101.vhd Line: 17
+Info (12128): Elaborating entity "ALU_1bit" for hierarchy "ALU_1bit:\ALU_GEN:0:ALU_inst" File: D:/Script/202/Computer Organizations/ALU101.vhd Line: 23
+Info (12128): Elaborating entity "mux_2" for hierarchy "ALU_1bit:\ALU_GEN:0:ALU_inst|mux_2:A_mux" File: D:/Script/202/Computer Organizations/ALU_1bit.vhd Line: 28
+Info (12128): Elaborating entity "full_add_sub" for hierarchy "ALU_1bit:\ALU_GEN:0:ALU_inst|full_add_sub:FullAddSub" File: D:/Script/202/Computer Organizations/ALU_1bit.vhd Line: 49
+Info (12128): Elaborating entity "full_adder" for hierarchy "ALU_1bit:\ALU_GEN:0:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst" File: D:/Script/202/Computer Organizations/full_add_sub.vhd Line: 34
+Info (12128): Elaborating entity "mux_6" for hierarchy "ALU_1bit:\ALU_GEN:0:ALU_inst|mux_6:Operation_Select" File: D:/Script/202/Computer Organizations/ALU_1bit.vhd Line: 65
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 376 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 70 input pins
+    Info (21059): Implemented 34 output pins
+    Info (21061): Implemented 272 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Sun Dec 29 22:58:50 2024
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:15
 
 

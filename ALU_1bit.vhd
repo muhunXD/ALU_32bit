@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity ALU_1bit is
     Port (
         A, B         : in std_logic;                 -- Inputs A and B
-        CarryIn      : in std_logic;                 -- Carry input for addition
+        CarryIn      : in std_logic;                 -- Carry input for addition/subtraction
         Ainvert      : in std_logic;                 -- A inversion control
         Binvert      : in std_logic;                 -- B inversion control
         Operation    : in std_logic_vector(3 downto 0); -- Operation selection
@@ -18,10 +18,11 @@ end ALU_1bit;
 
 architecture Structural of ALU_1bit is
     -- Internal signals
-    signal A_mux_out, B_mux_out, B_inverted : std_logic;
-    signal ADDOut, SUBOut, AndOut, OrOut, NorOut, Sum_Add, Sum_Sub : std_logic;
-    signal FullAdder_CarryOut_Add, FullAdder_CarryOut_Sub : std_logic;
-    signal Selected_Result : std_logic;
+    signal A_mux_out, B_mux_out : std_logic; -- Single-bit signals
+    signal AndOut, OrOut, NorOut : std_logic;
+    signal AddSubResult : std_logic;         -- Single-bit result
+    signal AddSubControl : std_logic;        -- Single-bit control signal
+    signal InternalCarryOut : std_logic;     -- Internal carry signal
 begin
     -- MUX for A input inversion
     A_mux: entity work.mux_2
@@ -41,61 +42,40 @@ begin
             O => B_mux_out    -- Output
         );
 
+    -- Determine Add/Sub control based on Operation
+    AddSubControl <= Operation(2); -- Use a single bit from Operation for control (1 for SUB, 0 for ADD)
+
+    -- Full adder/subtractor for single bit
+    FullAddSub: entity work.full_add_sub
+        port map (
+            a       => A_mux_out,        -- Single-bit input A
+            b       => B_mux_out,        -- Single-bit input B
+            c_in    => CarryIn,          -- Carry input
+            control => AddSubControl,    -- Single-bit control for addition/subtraction
+            sum     => AddSubResult,     -- Result from adder/subtractor
+            c_out   => InternalCarryOut  -- Carry/Borrow output
+        );
+
     -- Logical operations
     AndOut <= A_mux_out and B_mux_out;  -- AND operation
     OrOut <= A_mux_out or B_mux_out;    -- OR operation
     NorOut <= not (A_mux_out or B_mux_out); -- NOR operation
 
-    -- Full adder for addition
-    FullAdder_Add: entity work.full_adder
-        port map (
-            a => A_mux_out,
-            b => B_mux_out,
-            c_in => CarryIn,
-            sum => Sum_Add,
-            c_out => FullAdder_CarryOut_Add
-        );
-
-    -- Full adder for subtraction (B inverted and CarryIn = 1)
-    FullAdder_Sub: entity work.full_adder
-        port map (
-            a => A_mux_out,
-            b => not B_mux_out, -- Inverted B for subtraction
-            c_in => CarryIn,        -- CarryIn = 1 for subtraction
-            sum => Sum_Sub,
-            c_out => FullAdder_CarryOut_Sub
-        );
-
-    -- ADD and SUBTRACT Results
-    ADDOut <= Sum_Add;  -- Addition result
-    SUBOut <= Sum_Sub;  -- Subtraction result
-
-    -- Overflow detection (for subtraction)
-    OverflowDetect: entity work.overflow_detection
-        port map (
-            a => A_mux_out,
-            b => not B_mux_out,
-            sum => Sum_Sub,
-            overflow => Overflow
-        );
-
     -- MUX6 for operation selection
     Operation_Select: entity work.mux_6
         port map (
-            I0 => AndOut,           -- AND
-            I1 => OrOut,            -- OR
-            I2 => ADDOut,           -- ADD
-            I3 => SUBOut,           -- SUB
-            I4 => Less,             -- SLT
-            I5 => NorOut,           -- NOR
-            S  => Operation(3 downto 0), -- 3-bit selector
-            O  => Selected_Result   -- Selected result
+            I0 => AndOut,         -- AND
+            I1 => OrOut,          -- OR
+            I2 => AddSubResult,   -- ADD (control = "00")
+            I3 => AddSubResult,   -- SUB (control = "01")
+            I4 => Less,           -- SLT
+            I5 => NorOut,         -- NOR
+            S  => Operation(3 downto 0), -- 4-bit selector
+            O  => Result          -- Selected result
         );
 
-    -- Assign final result
-    Result <= Selected_Result;
-
     -- Assign outputs
-    CarryOut <= FullAdder_CarryOut_Add when Operation(3 downto 0) = "0010" else FullAdder_CarryOut_Sub;
-    Set <= Sum_Sub;  -- Subtraction result propagated for SLT
+    CarryOut <= InternalCarryOut; -- Assign internal carry to CarryOut
+    Set <= AddSubResult;          -- Subtraction result for SLT
+    Overflow <= InternalCarryOut; -- Overflow output
 end Structural;
