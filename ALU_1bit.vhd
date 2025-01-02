@@ -33,7 +33,6 @@ begin
             S => Ainvert,     -- Selector
             O => A_mux_out    -- Output
         );
-		  
 
     -- MUX for B input inversion
     B_mux: entity work.mux_2
@@ -75,8 +74,16 @@ begin
             O  => Result          -- Selected result
         );
 
+    -- Instantiate overflow detection
+    OverflowDetect: entity work.overflow_detection
+        port map (
+            a => A_mux_out,      -- Input A
+            b => B_mux_out,      -- Input B
+            sum => AddSubResult, -- Sum result
+            overflow => Overflow -- Overflow detection output
+        );
+
     -- Assign outputs
     CarryOut <= InternalCarryOut; -- Assign internal carry to CarryOut
     Set <= AddSubResult;          -- Subtraction result for SLT
-    Overflow <= InternalCarryOut; -- Overflow output
 end Structural;

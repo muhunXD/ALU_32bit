@@ -12,6 +12,6 @@ end overflow_detection;
 
 architecture Behavioral of overflow_detection is
 begin
-    -- Overflow detection logic
-    overflow <= ((a xor b) and (sum xor a)) or (a and b);
+    -- Correct Overflow Detection Logic
+    overflow <= (not (a xor b)) and (a xor sum);
 end Behavioral;
