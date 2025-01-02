@@ -84,6 +84,7 @@ begin
         end if;
     end process;
 
+	 
     -- Assign outputs
     Set <= Less;
     Result <= Internal_Result;
