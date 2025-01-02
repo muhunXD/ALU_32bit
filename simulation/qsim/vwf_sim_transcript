@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Jan 02 16:06:35 2025
+    Info: Processing started: Thu Jan 02 16:37:26 2025
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU101 -c ALU101 --vector_source="D:/Script/202/Computer Organizations/Waveform.vwf" --testbench_file="D:/Script/202/Computer Organizations/simulation/qsim/Waveform.vwf.vht"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -55,15 +55,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Jan 02 16:06:36 2025
+    Info: Processing started: Thu Jan 02 16:37:27 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Script/202/Computer Organizations/simulation/qsim/" ALU101 -c ALU101
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ALU101.vho in folder "D:/Script/202/Computer Organizations/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4643 megabytes
-    Info: Processing ended: Thu Jan 02 16:06:37 2025
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Thu Jan 02 16:37:27 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
@@ -85,7 +85,7 @@ Reading pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:06:37 on Jan 02,2025
+# Start time: 16:37:28 on Jan 02,2025
 # vcom -work work ALU101.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -99,21 +99,22 @@ Reading pref.tcl
 # -- Compiling entity ALU101
 # -- Compiling architecture structure of ALU101
 
-# End time: 16:06:37 on Jan 02,2025, Elapsed time: 0:00:00
+# End time: 16:37:28 on Jan 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:06:37 on Jan 02,2025
+# Start time: 16:37:28 on Jan 02,2025
+
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ALU101_vhd_vec_tst
 # -- Compiling architecture ALU101_arch of ALU101_vhd_vec_tst
-# End time: 16:06:37 on Jan 02,2025, Elapsed time: 0:00:00
+# End time: 16:37:28 on Jan 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ALU101_vhd_vec_tst 
-# Start time: 16:06:38 on Jan 02,2025
+# Start time: 16:37:28 on Jan 02,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -129,11 +130,11 @@ Reading pref.tcl
 # Loading fiftyfivenm.fiftyfivenm_io_ibuf(behavior)
 # Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
-# ** Warning: Design size of 33360 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 29823 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#33
 
-# End time: 16:06:38 on Jan 02,2025, Elapsed time: 0:00:00
+# End time: 16:37:29 on Jan 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -146,7 +147,7 @@ Reading D:/Script/202/Computer Organizations/simulation/qsim/ALU101.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Script/202/Computer Organizations/simulation/qsim/ALU101_20250102160638.sim.vwf
+Writing the resulting VWF to D:/Script/202/Computer Organizations/simulation/qsim/ALU101_20250102163729.sim.vwf
 
 Finished VCD to VWF conversion.
 

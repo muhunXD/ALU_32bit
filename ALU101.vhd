@@ -19,13 +19,15 @@ architecture Structural of ALU101 is
     signal Internal_Result : std_logic_vector(31 downto 0);
 begin
     -- Instantiate 1-bit ALU for LSB (Bit 0)
+	 
+	 
     ALU_LSB: entity work.ALU_1bit
         port map (
             A => A(0),
             B => B(0),
             CarryIn => Operation(2), -- CarryIn corresponds to ADD (0) or SUB (1)
-            Ainvert => Ainvert,
-            Binvert => Binvert,
+            Ainvert => Operation(3),
+            Binvert => Operation(2),
             Operation => Operation,
             Less => '0',
             Result => Internal_Result(0),
@@ -41,8 +43,8 @@ begin
                 A => A(i),
                 B => B(i),
                 CarryIn => Carry(i),
-                Ainvert => Ainvert,
-                Binvert => Binvert,
+                Ainvert => Operation(3),
+                Binvert => Operation(2),
                 Operation => Operation,
                 Less => '0',
                 Result => Internal_Result(i),
@@ -58,8 +60,8 @@ begin
             A => A(31),
             B => B(31),
             CarryIn => Carry(31),
-            Ainvert => Ainvert,
-            Binvert => Binvert,
+            Ainvert => Operation(3),
+            Binvert => Operation(2),
             Operation => Operation,
             Less => '0',
             Result => Internal_Result(31),

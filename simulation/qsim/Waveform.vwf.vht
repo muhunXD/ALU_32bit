@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "01/02/2025 16:06:36"
+-- Generated on "01/02/2025 16:37:26"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          ALU101
 -- 
@@ -238,7 +238,7 @@ END PROCESS t_prcs_A_4;
 -- A[3]
 t_prcs_A_3: PROCESS
 BEGIN
-	A(3) <= '1';
+	A(3) <= '0';
 WAIT;
 END PROCESS t_prcs_A_3;
 -- A[2]
@@ -437,7 +437,7 @@ END PROCESS t_prcs_B_4;
 -- B[3]
 t_prcs_B_3: PROCESS
 BEGIN
-	B(3) <= '1';
+	B(3) <= '0';
 WAIT;
 END PROCESS t_prcs_B_3;
 -- B[2]
@@ -449,13 +449,13 @@ END PROCESS t_prcs_B_2;
 -- B[1]
 t_prcs_B_1: PROCESS
 BEGIN
-	B(1) <= '1';
+	B(1) <= '0';
 WAIT;
 END PROCESS t_prcs_B_1;
 -- B[0]
 t_prcs_B_0: PROCESS
 BEGIN
-	B(0) <= '0';
+	B(0) <= '1';
 WAIT;
 END PROCESS t_prcs_B_0;
 
@@ -468,7 +468,7 @@ END PROCESS t_prcs_Binvert;
 -- Operation[3]
 t_prcs_Operation_3: PROCESS
 BEGIN
-	Operation(3) <= '0';
+	Operation(3) <= '1';
 WAIT;
 END PROCESS t_prcs_Operation_3;
 -- Operation[2]
@@ -480,7 +480,7 @@ END PROCESS t_prcs_Operation_2;
 -- Operation[1]
 t_prcs_Operation_1: PROCESS
 BEGIN
-	Operation(1) <= '1';
+	Operation(1) <= '0';
 WAIT;
 END PROCESS t_prcs_Operation_1;
 -- Operation[0]

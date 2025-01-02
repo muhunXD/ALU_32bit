@@ -63,70 +63,8 @@ B[28] => alu_1bit:ALU_GEN:28:ALU_inst.B
 B[29] => alu_1bit:ALU_GEN:29:ALU_inst.B
 B[30] => alu_1bit:ALU_GEN:30:ALU_inst.B
 B[31] => alu_1bit:ALU_MSB.B
-Ainvert => alu_1bit:ALU_LSB.Ainvert
-Ainvert => alu_1bit:ALU_GEN:1:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:2:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:3:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:4:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:5:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:6:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:7:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:8:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:9:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:10:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:11:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:12:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:13:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:14:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:15:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:16:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:17:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:18:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:19:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:20:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:21:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:22:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:23:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:24:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:25:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:26:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:27:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:28:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:29:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_GEN:30:ALU_inst.Ainvert
-Ainvert => alu_1bit:ALU_MSB.Ainvert
-Binvert => alu_1bit:ALU_LSB.Binvert
-Binvert => alu_1bit:ALU_GEN:1:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:2:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:3:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:4:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:5:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:6:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:7:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:8:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:9:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:10:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:11:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:12:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:13:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:14:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:15:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:16:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:17:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:18:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:19:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:20:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:21:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:22:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:23:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:24:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:25:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:26:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:27:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:28:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:29:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_GEN:30:ALU_inst.Binvert
-Binvert => alu_1bit:ALU_MSB.Binvert
+Ainvert => ~NO_FANOUT~
+Binvert => ~NO_FANOUT~
 Operation[0] => alu_1bit:ALU_LSB.Operation[0]
 Operation[0] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[0]
 Operation[0] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[0]
@@ -192,69 +130,133 @@ Operation[1] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[1]
 Operation[1] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[1]
 Operation[1] => alu_1bit:ALU_MSB.Operation[1]
 Operation[2] => alu_1bit:ALU_LSB.CarryIn
+Operation[2] => alu_1bit:ALU_LSB.Binvert
 Operation[2] => alu_1bit:ALU_LSB.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:1:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:2:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:3:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:3:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:4:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:4:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:5:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:5:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:6:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:6:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:7:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:7:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:8:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:8:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:9:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:9:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:10:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:10:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:11:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:11:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:12:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:12:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:13:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:13:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:14:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:14:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:15:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:15:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:16:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:16:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:17:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:17:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:18:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:18:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:19:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:19:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:20:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:20:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:21:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:21:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:22:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:22:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:23:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:23:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:24:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:24:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:25:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:25:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:26:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:26:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:27:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:27:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:28:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:28:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:29:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_GEN:30:ALU_inst.Binvert
 Operation[2] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_MSB.Binvert
 Operation[2] => alu_1bit:ALU_MSB.Operation[2]
+Operation[3] => alu_1bit:ALU_LSB.Ainvert
 Operation[3] => alu_1bit:ALU_LSB.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:1:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:2:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:3:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:3:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:4:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:4:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:5:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:5:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:6:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:6:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:7:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:7:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:8:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:8:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:9:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:9:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:10:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:10:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:11:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:11:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:12:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:12:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:13:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:13:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:14:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:14:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:15:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:15:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:16:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:16:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:17:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:17:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:18:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:18:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:19:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:19:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:20:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:20:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:21:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:21:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:22:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:22:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:23:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:23:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:24:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:24:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:25:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:25:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:26:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:26:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:27:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:27:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:28:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:28:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:29:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_GEN:30:ALU_inst.Ainvert
 Operation[3] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_MSB.Ainvert
 Operation[3] => alu_1bit:ALU_MSB.Operation[3]
 Result[0] <= alu_1bit:ALU_LSB.Result
 Result[1] <= alu_1bit:ALU_GEN:1:ALU_inst.Result
@@ -328,10 +330,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:ALU_LSB|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -397,10 +398,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:1:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -466,10 +466,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:2:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -535,10 +534,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:3:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -604,10 +602,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:4:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -673,10 +670,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:5:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -742,10 +738,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:6:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -811,10 +806,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:7:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -880,10 +874,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:8:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -949,10 +942,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:9:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1018,10 +1010,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1087,10 +1078,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:11:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1156,10 +1146,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:12:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1225,10 +1214,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:13:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1294,10 +1282,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:14:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1363,10 +1350,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:15:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1432,10 +1418,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:16:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1501,10 +1486,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:17:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1570,10 +1554,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:18:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1639,10 +1622,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:19:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1708,10 +1690,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:20:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1777,10 +1758,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:21:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1846,10 +1826,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:22:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1915,10 +1894,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:23:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -1984,10 +1962,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:24:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -2053,10 +2030,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:25:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -2122,10 +2098,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:26:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -2191,10 +2166,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:27:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -2260,10 +2234,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:28:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -2329,10 +2302,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:29:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -2398,10 +2370,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:\ALU_GEN:30:ALU_inst|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
@@ -2467,10 +2438,9 @@ O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 |ALU101|ALU_1bit:ALU_MSB|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
-b => b_controlled.DATAB
-b => b_controlled.DATAA
+b => full_adder:full_adder_inst.b
 c_in => full_adder:full_adder_inst.c_in
-control => b_controlled.OUTPUTSELECT
+control => ~NO_FANOUT~
 sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 

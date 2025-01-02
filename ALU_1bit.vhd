@@ -61,7 +61,6 @@ begin
     -- Logical operations
     AndOut <= A_mux_out and B_mux_out;  -- AND operation
     OrOut <= A_mux_out or B_mux_out;    -- OR operation
-    NorOut <= not (A_mux_out or B_mux_out); -- NOR operation
 
     -- MUX6 for operation selection
     Operation_Select: entity work.mux_6
@@ -71,7 +70,7 @@ begin
             I2 => AddSubResult,   -- ADD (control = "00")
             I3 => AddSubResult,   -- SUB (control = "01")
             I4 => Less,           -- SLT
-            I5 => NorOut,         -- NOR
+            I5 => AndOut,         -- NOR
             S  => Operation(3 downto 0), -- 4-bit selector
             O  => Result          -- Selected result
         );
