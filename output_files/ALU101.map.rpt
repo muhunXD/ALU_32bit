@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU101
-Sun Dec 29 22:58:50 2024
+Thu Jan 02 16:05:59 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  38. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:3:ALU_inst"
  39. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:2:ALU_inst"
  40. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:1:ALU_inst"
- 41. Port Connectivity Checks: "ALU_1bit:\ALU_GEN:0:ALU_inst"
+ 41. Port Connectivity Checks: "ALU_1bit:ALU_LSB"
  42. Post-Synthesis Netlist Statistics for Top Partition
  43. Elapsed Time Per Partition
  44. Analysis & Synthesis Messages
@@ -76,13 +76,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 29 22:58:50 2024       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jan 02 16:05:59 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ALU101                                      ;
 ; Top-level Entity Name              ; ALU101                                      ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 272                                         ;
-;     Total combinational functions  ; 272                                         ;
+; Total logic elements               ; 271                                         ;
+;     Total combinational functions  ; 271                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 104                                         ;
@@ -216,16 +216,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 272           ;
+; Estimated Total logic elements              ; 271           ;
 ;                                             ;               ;
-; Total combinational functions               ; 272           ;
+; Total combinational functions               ; 271           ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 235           ;
+;     -- 4 input functions                    ; 233           ;
 ;     -- 3 input functions                    ; 33            ;
-;     -- <=2 input functions                  ; 4             ;
+;     -- <=2 input functions                  ; 5             ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 272           ;
+;     -- normal mode                          ; 271           ;
 ;     -- arithmetic mode                      ; 0             ;
 ;                                             ;               ;
 ; Total registers                             ; 0             ;
@@ -237,9 +237,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; Ainvert~input ;
-; Maximum fan-out                             ; 126           ;
-; Total fan-out                               ; 1185          ;
-; Average fan-out                             ; 2.47          ;
+; Maximum fan-out                             ; 125           ;
+; Total fan-out                               ; 1179          ;
+; Average fan-out                             ; 2.46          ;
 +---------------------------------------------+---------------+
 
 
@@ -248,16 +248,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------+--------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                      ; Entity Name  ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------+--------------+--------------+
-; |ALU101                               ; 272 (11)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 104  ; 0            ; 0          ; |ALU101                                                                                  ; ALU101       ; work         ;
+; |ALU101                               ; 271 (11)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 104  ; 0            ; 0          ; |ALU101                                                                                  ; ALU101       ; work         ;
+;    |ALU_1bit:ALU_LSB|                 ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_LSB                                                                 ; ALU_1bit     ; work         ;
+;       |full_add_sub:FullAddSub|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_LSB|full_add_sub:FullAddSub                                         ; full_add_sub ; work         ;
+;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_LSB|full_add_sub:FullAddSub|full_adder:full_adder_inst              ; full_adder   ; work         ;
+;       |mux_2:A_mux|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_LSB|mux_2:A_mux                                                     ; mux_2        ; work         ;
+;       |mux_6:Operation_Select|        ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_LSB|mux_6:Operation_Select                                          ; mux_6        ; work         ;
 ;    |ALU_1bit:ALU_MSB|                 ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_MSB                                                                 ; ALU_1bit     ; work         ;
 ;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_MSB|full_add_sub:FullAddSub                                         ; full_add_sub ; work         ;
 ;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_MSB|full_add_sub:FullAddSub|full_adder:full_adder_inst              ; full_adder   ; work         ;
 ;       |mux_6:Operation_Select|        ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:ALU_MSB|mux_6:Operation_Select                                          ; mux_6        ; work         ;
-;    |ALU_1bit:\ALU_GEN:0:ALU_inst|     ; 13 (1)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst                                                     ; ALU_1bit     ; work         ;
-;       |full_add_sub:FullAddSub|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|full_add_sub:FullAddSub                             ; full_add_sub ; work         ;
-;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst  ; full_adder   ; work         ;
-;       |mux_2:A_mux|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_2:A_mux                                         ; mux_2        ; work         ;
-;       |mux_6:Operation_Select|        ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_6:Operation_Select                              ; mux_6        ; work         ;
 ;    |ALU_1bit:\ALU_GEN:10:ALU_inst|    ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst                                                    ; ALU_1bit     ; work         ;
 ;       |full_add_sub:FullAddSub|       ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|full_add_sub:FullAddSub                            ; full_add_sub ; work         ;
 ;          |full_adder:full_adder_inst| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU101|ALU_1bit:\ALU_GEN:10:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst ; full_adder   ; work         ;
@@ -397,13 +397,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
-; 16:1               ; 32 bits   ; 320 LEs       ; 128 LEs              ; 192 LEs                ; No         ; |ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_6:Operation_Select|Mux0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 16:1               ; 32 bits   ; 320 LEs       ; 128 LEs              ; 192 LEs                ; No         ; |ALU101|ALU_1bit:ALU_LSB|mux_6:Operation_Select|Mux0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -748,11 +748,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU_1bit:\ALU_GEN:0:ALU_inst"                                                           ;
+; Port Connectivity Checks: "ALU_1bit:ALU_LSB"                                                                       ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
-; carryin  ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; less     ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
@@ -765,14 +764,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 104                         ;
-; cycloneiii_lcell_comb ; 272                         ;
-;     normal            ; 272                         ;
-;         2 data inputs ; 4                           ;
+; cycloneiii_lcell_comb ; 271                         ;
+;     normal            ; 271                         ;
+;         2 data inputs ; 5                           ;
 ;         3 data inputs ; 33                          ;
-;         4 data inputs ; 235                         ;
+;         4 data inputs ; 233                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 36.00                       ;
-; Average LUT depth     ; 16.61                       ;
+; Average LUT depth     ; 16.64                       ;
 +-----------------------+-----------------------------+
 
 
@@ -791,7 +790,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Dec 29 22:58:43 2024
+    Info: Processing started: Thu Jan 02 16:05:52 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU101 -c ALU101
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -818,23 +817,26 @@ Info (12021): Found 2 design units, including 1 entities, in source file full_ad
     Info (12023): Found entity 1: full_add_sub File: D:/Script/202/Computer Organizations/full_add_sub.vhd Line: 4
 Info (12127): Elaborating entity "ALU101" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at ALU101.vhd(18): object "Less" assigned a value but never read File: D:/Script/202/Computer Organizations/ALU101.vhd Line: 18
-Warning (10873): Using initial value X (don't care) for net "Carry[0]" at ALU101.vhd(17) File: D:/Script/202/Computer Organizations/ALU101.vhd Line: 17
-Info (12128): Elaborating entity "ALU_1bit" for hierarchy "ALU_1bit:\ALU_GEN:0:ALU_inst" File: D:/Script/202/Computer Organizations/ALU101.vhd Line: 23
-Info (12128): Elaborating entity "mux_2" for hierarchy "ALU_1bit:\ALU_GEN:0:ALU_inst|mux_2:A_mux" File: D:/Script/202/Computer Organizations/ALU_1bit.vhd Line: 28
-Info (12128): Elaborating entity "full_add_sub" for hierarchy "ALU_1bit:\ALU_GEN:0:ALU_inst|full_add_sub:FullAddSub" File: D:/Script/202/Computer Organizations/ALU_1bit.vhd Line: 49
-Info (12128): Elaborating entity "full_adder" for hierarchy "ALU_1bit:\ALU_GEN:0:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst" File: D:/Script/202/Computer Organizations/full_add_sub.vhd Line: 34
-Info (12128): Elaborating entity "mux_6" for hierarchy "ALU_1bit:\ALU_GEN:0:ALU_inst|mux_6:Operation_Select" File: D:/Script/202/Computer Organizations/ALU_1bit.vhd Line: 65
+Info (12128): Elaborating entity "ALU_1bit" for hierarchy "ALU_1bit:ALU_LSB" File: D:/Script/202/Computer Organizations/ALU101.vhd Line: 22
+Info (12128): Elaborating entity "mux_2" for hierarchy "ALU_1bit:ALU_LSB|mux_2:A_mux" File: D:/Script/202/Computer Organizations/ALU_1bit.vhd Line: 29
+Info (12128): Elaborating entity "full_add_sub" for hierarchy "ALU_1bit:ALU_LSB|full_add_sub:FullAddSub" File: D:/Script/202/Computer Organizations/ALU_1bit.vhd Line: 51
+Warning (10036): Verilog HDL or VHDL warning at full_add_sub.vhd(16): object "carry_in" assigned a value but never read File: D:/Script/202/Computer Organizations/full_add_sub.vhd Line: 16
+Warning (10492): VHDL Process Statement warning at full_add_sub.vhd(26): signal "c_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Script/202/Computer Organizations/full_add_sub.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at full_add_sub.vhd(30): signal "c_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Script/202/Computer Organizations/full_add_sub.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at full_add_sub.vhd(34): signal "c_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Script/202/Computer Organizations/full_add_sub.vhd Line: 34
+Info (12128): Elaborating entity "full_adder" for hierarchy "ALU_1bit:ALU_LSB|full_add_sub:FullAddSub|full_adder:full_adder_inst" File: D:/Script/202/Computer Organizations/full_add_sub.vhd Line: 40
+Info (12128): Elaborating entity "mux_6" for hierarchy "ALU_1bit:ALU_LSB|mux_6:Operation_Select" File: D:/Script/202/Computer Organizations/ALU_1bit.vhd Line: 67
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 376 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 375 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 70 input pins
     Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 272 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Sun Dec 29 22:58:50 2024
+    Info (21061): Implemented 271 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4797 megabytes
+    Info: Processing ended: Thu Jan 02 16:05:59 2025
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:13
 
 

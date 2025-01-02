@@ -24,6 +24,7 @@ architecture Structural of ALU_1bit is
     signal AddSubControl : std_logic;        -- Single-bit control signal
     signal InternalCarryOut : std_logic;     -- Internal carry signal
 begin
+	
     -- MUX for A input inversion
     A_mux: entity work.mux_2
         port map (
@@ -32,6 +33,7 @@ begin
             S => Ainvert,     -- Selector
             O => A_mux_out    -- Output
         );
+		  
 
     -- MUX for B input inversion
     B_mux: entity work.mux_2

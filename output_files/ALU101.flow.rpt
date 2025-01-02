@@ -1,5 +1,5 @@
 Flow report for ALU101
-Sun Dec 29 22:59:07 2024
+Thu Jan 02 16:06:37 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Dec 29 22:59:04 2024       ;
+; Flow Status                        ; Successful - Thu Jan 02 16:06:37 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ALU101                                      ;
 ; Top-level Entity Name              ; ALU101                                      ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M08DAF484C8G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 273 / 8,064 ( 3 % )                         ;
-;     Total combinational functions  ; 273 / 8,064 ( 3 % )                         ;
+; Total logic elements               ; 272 / 8,064 ( 3 % )                         ;
+;     Total combinational functions  ; 272 / 8,064 ( 3 % )                         ;
 ;     Dedicated logic registers      ; 0 / 8,064 ( 0 % )                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 104 / 250 ( 42 % )                          ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/29/2024 22:58:43 ;
+; Start date & time ; 01/02/2025 16:05:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALU101              ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 4931002522810.173548792303536          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 4931002522810.173580875214448          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -93,11 +93,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4796 MB             ; 00:00:14                           ;
-; Fitter               ; 00:00:10     ; 1.2                     ; 5824 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4684 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.3                     ; 4840 MB             ; 00:00:02                           ;
-; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:22                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4797 MB             ; 00:00:13                           ;
+; Fitter               ; 00:00:03     ; 1.2                     ; 5827 MB             ; 00:00:04                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4685 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.3                     ; 4838 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4633 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4643 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4633 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4643 MB             ; 00:00:01                           ;
+; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,6 +114,10 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; DESKTOP-VSUAVJ5  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-VSUAVJ5  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-VSUAVJ5  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-VSUAVJ5  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-VSUAVJ5  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-VSUAVJ5  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-VSUAVJ5  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -120,6 +128,10 @@ quartus_map --read_settings_files=on --write_settings_files=off ALU101 -c ALU101
 quartus_fit --read_settings_files=off --write_settings_files=off ALU101 -c ALU101
 quartus_asm --read_settings_files=off --write_settings_files=off ALU101 -c ALU101
 quartus_sta ALU101 -c ALU101
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU101 -c ALU101 --vector_source="D:/Script/202/Computer Organizations/Waveform.vwf" --testbench_file="D:/Script/202/Computer Organizations/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Script/202/Computer Organizations/simulation/qsim/" ALU101 -c ALU101
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU101 -c ALU101 --vector_source="D:/Script/202/Computer Organizations/Waveform.vwf" --testbench_file="D:/Script/202/Computer Organizations/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Script/202/Computer Organizations/simulation/qsim/" ALU101 -c ALU101
 
 
 

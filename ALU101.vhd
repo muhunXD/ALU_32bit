@@ -18,8 +18,24 @@ architecture Structural of ALU101 is
     signal Less  : std_logic;
     signal Internal_Result : std_logic_vector(31 downto 0);
 begin
-    -- Instantiate 1-bit ALUs for bits 0 to 30
-    ALU_GEN: for i in 0 to 30 generate
+    -- Instantiate 1-bit ALU for LSB (Bit 0)
+    ALU_LSB: entity work.ALU_1bit
+        port map (
+            A => A(0),
+            B => B(0),
+            CarryIn => Operation(2), -- CarryIn corresponds to ADD (0) or SUB (1)
+            Ainvert => Ainvert,
+            Binvert => Binvert,
+            Operation => Operation,
+            Less => '0',
+            Result => Internal_Result(0),
+            CarryOut => Carry(1),
+            Overflow => open,  -- No overflow detection for lower bits
+            Set => open
+        );
+
+    -- Instantiate 1-bit ALUs for bits 1 to 30
+    ALU_GEN: for i in 1 to 30 generate
         ALU_inst: entity work.ALU_1bit
             port map (
                 A => A(i),
@@ -36,7 +52,7 @@ begin
             );
     end generate;
 
-    -- Instantiate 1-bit ALU for MSB
+    -- Instantiate 1-bit ALU for MSB (Bit 31)
     ALU_MSB: entity work.ALU_1bit
         port map (
             A => A(31),
@@ -52,7 +68,7 @@ begin
             Set => Less
         );
 
-    -- Zero detection
+   -- Zero detection
     process (Internal_Result)
     begin
         if Internal_Result = "00000000000000000000000000000000" then

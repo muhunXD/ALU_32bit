@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Dec 29 22:58:50 2024
+Analysis & Synthesis Status : Successful - Thu Jan 02 16:05:59 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : ALU101
 Top-level Entity Name : ALU101
 Family : MAX 10
-Total logic elements : 272
-    Total combinational functions : 272
+Total logic elements : 271
+    Total combinational functions : 271
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 104

@@ -13,6 +13,8 @@ end entity full_add_sub;
 
 architecture Behavioral of full_add_sub is
     signal b_controlled : std_logic; -- Controlled B signal based on control
+	 signal carry_in     : std_logic; -- Internal carry-in signal
+	 
 begin
     -- Process to handle controlled B based on the control signal
     process(control, b)
@@ -21,14 +23,18 @@ begin
             when '0' => 
                 -- Control = 0: Perform addition
                 b_controlled <= b; -- Use B as is
+					 carry_in <= c_in;
             when '1' => 
                 -- Control = 1: Perform subtraction
                 b_controlled <= not b; -- Invert B for subtraction
+					 carry_in <= c_in;
             when others => 
                 -- Default case (optional, for robustness)
                 b_controlled <= b; -- Default to addition
+					 carry_in <= c_in;
         end case;
     end process;
+	 
 
     -- Instantiate full adder for the single bit
     full_adder_inst: entity work.full_adder

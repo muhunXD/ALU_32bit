@@ -1,5 +1,5 @@
 |ALU101
-A[0] => alu_1bit:ALU_GEN:0:ALU_inst.A
+A[0] => alu_1bit:ALU_LSB.A
 A[1] => alu_1bit:ALU_GEN:1:ALU_inst.A
 A[2] => alu_1bit:ALU_GEN:2:ALU_inst.A
 A[3] => alu_1bit:ALU_GEN:3:ALU_inst.A
@@ -31,7 +31,7 @@ A[28] => alu_1bit:ALU_GEN:28:ALU_inst.A
 A[29] => alu_1bit:ALU_GEN:29:ALU_inst.A
 A[30] => alu_1bit:ALU_GEN:30:ALU_inst.A
 A[31] => alu_1bit:ALU_MSB.A
-B[0] => alu_1bit:ALU_GEN:0:ALU_inst.B
+B[0] => alu_1bit:ALU_LSB.B
 B[1] => alu_1bit:ALU_GEN:1:ALU_inst.B
 B[2] => alu_1bit:ALU_GEN:2:ALU_inst.B
 B[3] => alu_1bit:ALU_GEN:3:ALU_inst.B
@@ -63,7 +63,7 @@ B[28] => alu_1bit:ALU_GEN:28:ALU_inst.B
 B[29] => alu_1bit:ALU_GEN:29:ALU_inst.B
 B[30] => alu_1bit:ALU_GEN:30:ALU_inst.B
 B[31] => alu_1bit:ALU_MSB.B
-Ainvert => alu_1bit:ALU_GEN:0:ALU_inst.Ainvert
+Ainvert => alu_1bit:ALU_LSB.Ainvert
 Ainvert => alu_1bit:ALU_GEN:1:ALU_inst.Ainvert
 Ainvert => alu_1bit:ALU_GEN:2:ALU_inst.Ainvert
 Ainvert => alu_1bit:ALU_GEN:3:ALU_inst.Ainvert
@@ -95,7 +95,7 @@ Ainvert => alu_1bit:ALU_GEN:28:ALU_inst.Ainvert
 Ainvert => alu_1bit:ALU_GEN:29:ALU_inst.Ainvert
 Ainvert => alu_1bit:ALU_GEN:30:ALU_inst.Ainvert
 Ainvert => alu_1bit:ALU_MSB.Ainvert
-Binvert => alu_1bit:ALU_GEN:0:ALU_inst.Binvert
+Binvert => alu_1bit:ALU_LSB.Binvert
 Binvert => alu_1bit:ALU_GEN:1:ALU_inst.Binvert
 Binvert => alu_1bit:ALU_GEN:2:ALU_inst.Binvert
 Binvert => alu_1bit:ALU_GEN:3:ALU_inst.Binvert
@@ -127,7 +127,7 @@ Binvert => alu_1bit:ALU_GEN:28:ALU_inst.Binvert
 Binvert => alu_1bit:ALU_GEN:29:ALU_inst.Binvert
 Binvert => alu_1bit:ALU_GEN:30:ALU_inst.Binvert
 Binvert => alu_1bit:ALU_MSB.Binvert
-Operation[0] => alu_1bit:ALU_GEN:0:ALU_inst.Operation[0]
+Operation[0] => alu_1bit:ALU_LSB.Operation[0]
 Operation[0] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[0]
 Operation[0] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[0]
 Operation[0] => alu_1bit:ALU_GEN:3:ALU_inst.Operation[0]
@@ -159,7 +159,7 @@ Operation[0] => alu_1bit:ALU_GEN:28:ALU_inst.Operation[0]
 Operation[0] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[0]
 Operation[0] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[0]
 Operation[0] => alu_1bit:ALU_MSB.Operation[0]
-Operation[1] => alu_1bit:ALU_GEN:0:ALU_inst.Operation[1]
+Operation[1] => alu_1bit:ALU_LSB.Operation[1]
 Operation[1] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[1]
 Operation[1] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[1]
 Operation[1] => alu_1bit:ALU_GEN:3:ALU_inst.Operation[1]
@@ -191,7 +191,8 @@ Operation[1] => alu_1bit:ALU_GEN:28:ALU_inst.Operation[1]
 Operation[1] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[1]
 Operation[1] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[1]
 Operation[1] => alu_1bit:ALU_MSB.Operation[1]
-Operation[2] => alu_1bit:ALU_GEN:0:ALU_inst.Operation[2]
+Operation[2] => alu_1bit:ALU_LSB.CarryIn
+Operation[2] => alu_1bit:ALU_LSB.Operation[2]
 Operation[2] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[2]
 Operation[2] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[2]
 Operation[2] => alu_1bit:ALU_GEN:3:ALU_inst.Operation[2]
@@ -223,7 +224,7 @@ Operation[2] => alu_1bit:ALU_GEN:28:ALU_inst.Operation[2]
 Operation[2] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[2]
 Operation[2] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[2]
 Operation[2] => alu_1bit:ALU_MSB.Operation[2]
-Operation[3] => alu_1bit:ALU_GEN:0:ALU_inst.Operation[3]
+Operation[3] => alu_1bit:ALU_LSB.Operation[3]
 Operation[3] => alu_1bit:ALU_GEN:1:ALU_inst.Operation[3]
 Operation[3] => alu_1bit:ALU_GEN:2:ALU_inst.Operation[3]
 Operation[3] => alu_1bit:ALU_GEN:3:ALU_inst.Operation[3]
@@ -255,43 +256,43 @@ Operation[3] => alu_1bit:ALU_GEN:28:ALU_inst.Operation[3]
 Operation[3] => alu_1bit:ALU_GEN:29:ALU_inst.Operation[3]
 Operation[3] => alu_1bit:ALU_GEN:30:ALU_inst.Operation[3]
 Operation[3] => alu_1bit:ALU_MSB.Operation[3]
-Result[0] << alu_1bit:ALU_GEN:0:ALU_inst.Result
-Result[1] << alu_1bit:ALU_GEN:1:ALU_inst.Result
-Result[2] << alu_1bit:ALU_GEN:2:ALU_inst.Result
-Result[3] << alu_1bit:ALU_GEN:3:ALU_inst.Result
-Result[4] << alu_1bit:ALU_GEN:4:ALU_inst.Result
-Result[5] << alu_1bit:ALU_GEN:5:ALU_inst.Result
-Result[6] << alu_1bit:ALU_GEN:6:ALU_inst.Result
-Result[7] << alu_1bit:ALU_GEN:7:ALU_inst.Result
-Result[8] << alu_1bit:ALU_GEN:8:ALU_inst.Result
-Result[9] << alu_1bit:ALU_GEN:9:ALU_inst.Result
-Result[10] << alu_1bit:ALU_GEN:10:ALU_inst.Result
-Result[11] << alu_1bit:ALU_GEN:11:ALU_inst.Result
-Result[12] << alu_1bit:ALU_GEN:12:ALU_inst.Result
-Result[13] << alu_1bit:ALU_GEN:13:ALU_inst.Result
-Result[14] << alu_1bit:ALU_GEN:14:ALU_inst.Result
-Result[15] << alu_1bit:ALU_GEN:15:ALU_inst.Result
-Result[16] << alu_1bit:ALU_GEN:16:ALU_inst.Result
-Result[17] << alu_1bit:ALU_GEN:17:ALU_inst.Result
-Result[18] << alu_1bit:ALU_GEN:18:ALU_inst.Result
-Result[19] << alu_1bit:ALU_GEN:19:ALU_inst.Result
-Result[20] << alu_1bit:ALU_GEN:20:ALU_inst.Result
-Result[21] << alu_1bit:ALU_GEN:21:ALU_inst.Result
-Result[22] << alu_1bit:ALU_GEN:22:ALU_inst.Result
-Result[23] << alu_1bit:ALU_GEN:23:ALU_inst.Result
-Result[24] << alu_1bit:ALU_GEN:24:ALU_inst.Result
-Result[25] << alu_1bit:ALU_GEN:25:ALU_inst.Result
-Result[26] << alu_1bit:ALU_GEN:26:ALU_inst.Result
-Result[27] << alu_1bit:ALU_GEN:27:ALU_inst.Result
-Result[28] << alu_1bit:ALU_GEN:28:ALU_inst.Result
-Result[29] << alu_1bit:ALU_GEN:29:ALU_inst.Result
-Result[30] << alu_1bit:ALU_GEN:30:ALU_inst.Result
-Result[31] << alu_1bit:ALU_MSB.Result
-Overflow << alu_1bit:ALU_MSB.Overflow
-Zero << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+Result[0] <= alu_1bit:ALU_LSB.Result
+Result[1] <= alu_1bit:ALU_GEN:1:ALU_inst.Result
+Result[2] <= alu_1bit:ALU_GEN:2:ALU_inst.Result
+Result[3] <= alu_1bit:ALU_GEN:3:ALU_inst.Result
+Result[4] <= alu_1bit:ALU_GEN:4:ALU_inst.Result
+Result[5] <= alu_1bit:ALU_GEN:5:ALU_inst.Result
+Result[6] <= alu_1bit:ALU_GEN:6:ALU_inst.Result
+Result[7] <= alu_1bit:ALU_GEN:7:ALU_inst.Result
+Result[8] <= alu_1bit:ALU_GEN:8:ALU_inst.Result
+Result[9] <= alu_1bit:ALU_GEN:9:ALU_inst.Result
+Result[10] <= alu_1bit:ALU_GEN:10:ALU_inst.Result
+Result[11] <= alu_1bit:ALU_GEN:11:ALU_inst.Result
+Result[12] <= alu_1bit:ALU_GEN:12:ALU_inst.Result
+Result[13] <= alu_1bit:ALU_GEN:13:ALU_inst.Result
+Result[14] <= alu_1bit:ALU_GEN:14:ALU_inst.Result
+Result[15] <= alu_1bit:ALU_GEN:15:ALU_inst.Result
+Result[16] <= alu_1bit:ALU_GEN:16:ALU_inst.Result
+Result[17] <= alu_1bit:ALU_GEN:17:ALU_inst.Result
+Result[18] <= alu_1bit:ALU_GEN:18:ALU_inst.Result
+Result[19] <= alu_1bit:ALU_GEN:19:ALU_inst.Result
+Result[20] <= alu_1bit:ALU_GEN:20:ALU_inst.Result
+Result[21] <= alu_1bit:ALU_GEN:21:ALU_inst.Result
+Result[22] <= alu_1bit:ALU_GEN:22:ALU_inst.Result
+Result[23] <= alu_1bit:ALU_GEN:23:ALU_inst.Result
+Result[24] <= alu_1bit:ALU_GEN:24:ALU_inst.Result
+Result[25] <= alu_1bit:ALU_GEN:25:ALU_inst.Result
+Result[26] <= alu_1bit:ALU_GEN:26:ALU_inst.Result
+Result[27] <= alu_1bit:ALU_GEN:27:ALU_inst.Result
+Result[28] <= alu_1bit:ALU_GEN:28:ALU_inst.Result
+Result[29] <= alu_1bit:ALU_GEN:29:ALU_inst.Result
+Result[30] <= alu_1bit:ALU_GEN:30:ALU_inst.Result
+Result[31] <= alu_1bit:ALU_MSB.Result
+Overflow <= alu_1bit:ALU_MSB.Overflow
+Zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst
+|ALU101|ALU_1bit:ALU_LSB
 A => mux_2:A_mux.I0
 A => mux_2:A_mux.I1
 B => mux_2:B_mux.I0
@@ -311,21 +312,21 @@ Set <= full_add_sub:FullAddSub.sum
 Overflow <= full_add_sub:FullAddSub.c_out
 
 
-|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_2:A_mux
+|ALU101|ALU_1bit:ALU_LSB|mux_2:A_mux
 I0 => O.DATAB
 I1 => O.DATAA
 S => O.OUTPUTSELECT
 O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_2:B_mux
+|ALU101|ALU_1bit:ALU_LSB|mux_2:B_mux
 I0 => O.DATAB
 I1 => O.DATAA
 S => O.OUTPUTSELECT
 O <= O.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|full_add_sub:FullAddSub
+|ALU101|ALU_1bit:ALU_LSB|full_add_sub:FullAddSub
 a => full_adder:full_adder_inst.a
 b => b_controlled.DATAB
 b => b_controlled.DATAA
@@ -335,7 +336,7 @@ sum <= full_adder:full_adder_inst.sum
 c_out <= full_adder:full_adder_inst.c_out
 
 
-|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|full_add_sub:FullAddSub|full_adder:full_adder_inst
+|ALU101|ALU_1bit:ALU_LSB|full_add_sub:FullAddSub|full_adder:full_adder_inst
 a => sum.IN0
 a => c_out.IN0
 b => sum.IN1
@@ -346,7 +347,7 @@ sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU101|ALU_1bit:\ALU_GEN:0:ALU_inst|mux_6:Operation_Select
+|ALU101|ALU_1bit:ALU_LSB|mux_6:Operation_Select
 I0 => Mux0.IN10
 I1 => Mux0.IN11
 I2 => Mux0.IN12
