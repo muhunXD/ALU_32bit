@@ -8,6 +8,7 @@ entity ALU101 is
         Binvert    : in std_logic;
         Operation  : in std_logic_vector(3 downto 0);
         Result     : out std_logic_vector(31 downto 0);
+        Set        : out std_logic; -- Set output for SLT
         Overflow   : out std_logic;
         Zero       : out std_logic
     );
@@ -18,9 +19,7 @@ architecture Structural of ALU101 is
     signal Less  : std_logic;
     signal Internal_Result : std_logic_vector(31 downto 0);
 begin
-    -- Instantiate 1-bit ALU for LSB (Bit 0)
-	 
-	 
+    -- Instantiate 1-bit ALU for LSB
     ALU_LSB: entity work.ALU_1bit
         port map (
             A => A(0),
@@ -29,10 +28,10 @@ begin
             Ainvert => Operation(3),
             Binvert => Operation(2),
             Operation => Operation,
-            Less => '0',
+            Less => Less,            -- Use Less signal from MSB
             Result => Internal_Result(0),
             CarryOut => Carry(1),
-            Overflow => open,  -- No overflow detection for lower bits
+            Overflow => open,
             Set => open
         );
 
@@ -49,12 +48,12 @@ begin
                 Less => '0',
                 Result => Internal_Result(i),
                 CarryOut => Carry(i+1),
-                Overflow => open,  -- No overflow detection for lower bits
+                Overflow => open,
                 Set => open
             );
     end generate;
 
-    -- Instantiate 1-bit ALU for MSB (Bit 31)
+    -- Instantiate 1-bit ALU for MSB
     ALU_MSB: entity work.ALU_1bit
         port map (
             A => A(31),
@@ -66,11 +65,11 @@ begin
             Less => '0',
             Result => Internal_Result(31),
             CarryOut => open,
-            Overflow => Overflow, -- Overflow detection connected here
-            Set => Less
+            Overflow => Overflow,
+            Set => Less -- Use Set signal to drive Less for LSB
         );
 
-   -- Zero detection
+    -- Zero detection
     process (Internal_Result)
     begin
         if Internal_Result = "00000000000000000000000000000000" then
@@ -80,6 +79,7 @@ begin
         end if;
     end process;
 
-    -- Assign internal result to the output port
+    -- Assign outputs
+    Set <= Less;
     Result <= Internal_Result;
 end Structural;

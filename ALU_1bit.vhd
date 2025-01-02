@@ -19,12 +19,12 @@ end ALU_1bit;
 architecture Structural of ALU_1bit is
     -- Internal signals
     signal A_mux_out, B_mux_out : std_logic; -- Single-bit signals
-    signal AndOut, OrOut, NorOut : std_logic;
+    signal AndOut, OrOut : std_logic;
     signal AddSubResult : std_logic;         -- Single-bit result
     signal AddSubControl : std_logic;        -- Single-bit control signal
     signal InternalCarryOut : std_logic;     -- Internal carry signal
 begin
-	
+
     -- MUX for A input inversion
     A_mux: entity work.mux_2
         port map (
@@ -68,8 +68,8 @@ begin
             I1 => OrOut,          -- OR
             I2 => AddSubResult,   -- ADD (control = "00")
             I3 => AddSubResult,   -- SUB (control = "01")
-            I4 => Less,           -- SLT
-            I5 => AndOut,         -- NOR
+            I4 => Less,           -- SLT (use Less from MSB for LSB)
+            I5 => AndOut, -- NOR
             S  => Operation(3 downto 0), -- 4-bit selector
             O  => Result          -- Selected result
         );
@@ -85,5 +85,5 @@ begin
 
     -- Assign outputs
     CarryOut <= InternalCarryOut; -- Assign internal carry to CarryOut
-    Set <= AddSubResult;          -- Subtraction result for SLT
+    Set <= AddSubResult;          -- Subtraction result for SLT (MSB drives Less for LSB)
 end Structural;

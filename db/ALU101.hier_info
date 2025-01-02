@@ -290,6 +290,7 @@ Result[28] <= alu_1bit:ALU_GEN:28:ALU_inst.Result
 Result[29] <= alu_1bit:ALU_GEN:29:ALU_inst.Result
 Result[30] <= alu_1bit:ALU_GEN:30:ALU_inst.Result
 Result[31] <= alu_1bit:ALU_MSB.Result
+Set <= alu_1bit:ALU_MSB.Set
 Overflow <= alu_1bit:ALU_MSB.Overflow
 Zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
